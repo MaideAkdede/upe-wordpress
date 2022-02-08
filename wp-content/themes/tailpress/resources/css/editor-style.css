@@ -1,0 +1,19 @@
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "fonts.css";
+body {
+    @apply font-dmsans;
+}
+
+.wp-block{
+    @apply max-w-screen-xl;
+}
+
+.wp-block[data-align=wide] {
+    @apply max-w-screen-xl;
+}
+
+.wp-block[data-align=full] {
+    @apply max-w-full;
+}

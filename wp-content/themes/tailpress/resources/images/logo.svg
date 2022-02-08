@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracé_8" data-name="Tracé 8" d="M45.274,149.324c-.483,2.758,2.9,3.656,3.459,1.393a16.056,16.056,0,0,1,17.842-10.878,16.512,16.512,0,0,1,5.574,1.9.42.42,0,0,0,.515-.652,16.15,16.15,0,0,0-27.39,8.238" transform="translate(-45.227 -136.24)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="-0.242" y1="1.227" x2="-0.236" y2="1.227" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb32a"/>
+      <stop offset="0.213" stop-color="#c5861f"/>
+      <stop offset="0.537" stop-color="#e49e25"/>
+      <stop offset="0.811" stop-color="#f8ad28"/>
+      <stop offset="1" stop-color="#ffb32a"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <path id="Tracé_9" data-name="Tracé 9" d="M82.554,0a.4.4,0,0,0-.4.315,15.881,15.881,0,0,0,1.191,10.823,16.213,16.213,0,0,0,20.4,7.852c2.605-1.061,1.571-4.386-.654-3.653A16.075,16.075,0,0,1,84.336,6.1,16.276,16.276,0,0,1,82.986.4.417.417,0,0,0,82.56,0Z" transform="translate(-81.701)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="-0.496" y1="1.895" x2="-0.489" y2="1.895" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#004661"/>
+      <stop offset="0.199" stop-color="#005276"/>
+      <stop offset="0.506" stop-color="#006292"/>
+      <stop offset="0.684" stop-color="#00699d"/>
+      <stop offset="1" stop-color="#00699d"/>
+    </linearGradient>
+    <clipPath id="clip-path-3">
+      <path id="Tracé_10" data-name="Tracé 10" d="M4.868,23.93a15.889,15.889,0,0,1-.09,20.809A16.427,16.427,0,0,1,.221,48.452a.419.419,0,0,0,.286.778,16.067,16.067,0,0,0,9.252-5.824A16.016,16.016,0,0,0,7.88,21.739a2.467,2.467,0,0,0-1.637-.677A1.688,1.688,0,0,0,4.868,23.93" transform="translate(0 -21.062)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="0.026" y1="1.37" x2="0.036" y2="1.37" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#aeb0b3"/>
+      <stop offset="0.43" stop-color="#9d9fa2"/>
+      <stop offset="1" stop-color="#818386"/>
+    </linearGradient>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_8" data-name="Rectangle 8" width="39" height="42.292" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_102" data-name="Groupe 102" transform="translate(-172 -59)">
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="35" cy="35" r="35" transform="translate(172 59)" fill="#fff"/>
+    <g id="Logo_upe" data-name="Logo upe" transform="translate(188 71.354)">
+      <g id="Groupe_10" data-name="Groupe 10" transform="translate(7.264 21.756)">
+        <g id="Groupe_9" data-name="Groupe 9" clip-path="url(#clip-path)">
+          <rect id="Rectangle_5" data-name="Rectangle 5" width="28.211" height="16.74" transform="translate(-0.436)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Groupe_12" data-name="Groupe 12" transform="translate(13.122)">
+        <g id="Groupe_11" data-name="Groupe 11" clip-path="url(#clip-path-2)">
+          <rect id="Rectangle_6" data-name="Rectangle 6" width="25.363" height="22.404" transform="matrix(1, -0.014, 0.014, 1, -0.713, 0.004)" fill="url(#linear-gradient-2)"/>
+        </g>
+      </g>
+      <g id="Groupe_14" data-name="Groupe 14" transform="translate(0 3.363)">
+        <g id="Groupe_13" data-name="Groupe 13" clip-path="url(#clip-path-3)">
+          <rect id="Rectangle_7" data-name="Rectangle 7" width="15.497" height="28.484" transform="translate(-0.607 0.006) rotate(-0.814)" fill="url(#linear-gradient-3)"/>
+        </g>
+      </g>
+      <g id="Groupe_16" data-name="Groupe 16">
+        <g id="Groupe_15" data-name="Groupe 15" clip-path="url(#clip-path-4)">
+          <path id="Tracé_11" data-name="Tracé 11" d="M114.943,212.731a1.739,1.739,0,0,1-.452,1.271,1.543,1.543,0,0,1-1.15.452A1.508,1.508,0,0,1,112.2,214a1.709,1.709,0,0,1-.461-1.266v-5.882h-1.629v6.027a3.067,3.067,0,0,0,.949,2.33,3.357,3.357,0,0,0,4.58,0,3.169,3.169,0,0,0,.932-2.335v-6.023h-1.629Z" transform="translate(-92.426 -173.819)" fill="#62af31"/>
+          <path id="Tracé_12" data-name="Tracé 12" d="M165.569,207.507a2.807,2.807,0,0,0-1.03-.555,5.073,5.073,0,0,0-1.017-.1H160.23v9.187h1.629v-3.461h1.835a2.691,2.691,0,0,0,2.149-.933,2.9,2.9,0,0,0,.713-1.9,2.974,2.974,0,0,0-.281-1.331,2.286,2.286,0,0,0-.707-.909m-.641,2.2a1.364,1.364,0,0,1-.314.877,1.2,1.2,0,0,1-.974.405h-1.78v-2.558H163.6a1.455,1.455,0,0,1,.852.228.939.939,0,0,1,.352.364,1.624,1.624,0,0,1,.128.684" transform="translate(-134.496 -173.819)" fill="#62af31"/>
+          <path id="Tracé_13" data-name="Tracé 13" d="M212.306,208.434v-1.584h-5.84v9.187h5.84v-1.584H208.1v-2.291h3.594v-1.51H208.1v-2.218Z" transform="translate(-173.306 -173.819)" fill="#62af31"/>
+          <path id="Tracé_14" data-name="Tracé 14" d="M155.523,24.122a3.67,3.67,0,1,1-4.352-2.814,3.65,3.65,0,0,1,4.352,2.814" transform="translate(-124.449 -17.839)" fill="#62af31"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
