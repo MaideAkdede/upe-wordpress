@@ -10,12 +10,12 @@
         <div class="mx-auto mb-8 flex items-center content-center justify-center sm:gap-4">
             <img class="" src="<?php echo get_template_directory_uri() . '/resources/images/logo.svg' ?>"
                  alt="<?= get_bloginfo('name'); ?>" width="70" height="70">
-            <p class="sr-only uppercase text-white text-opacity-100 font-bold sm:not-sr-only"><?= get_bloginfo('name'); ?></p>
+            <p class="sr-only uppercase text-white text-opacity-100 font-bold font-dm-bold sm:not-sr-only"><?= get_bloginfo('name'); ?></p>
         </div>
         <address class="not-italic">
             <div class="flex items-start mb-6">
                 <div class="w-4 mr-2.5 inline-block">
-                    <i class="fas fa-directions text-secondary pt-[8px]"></i>
+                    <i class="fas fa-directions text-secondary pt-[7px]"></i>
                 </div>
                 <p>Avenue J. Burgers 2 Bte 25, <br>
                     1180 Uccle (Belgique)</p>
@@ -40,23 +40,23 @@
         </div>
     </div>
     <div class="container p-0 py-12 mx-auto text-white text-opacity-60 text-left not-italic max-w-[260px] leading-8 border-b-2   border-white border-opacity-10">
-        <h2 class="text-white text-opacity-100 font-semibold mb-6 uppercase">NEWSLETTER</h2>
+        <h2 class="text-white text-opacity-100 font-bold font-dm-bold mb-6 uppercase">NEWSLETTER</h2>
         <p class="">Inscrivez-vous à notre newsletter et restez aux courants de nos dernières actualités</p>
         <form action="" method="POST">
             <label for="newsletter-email" class="sr-only">S'inscrire à la newsletter</label>
-            <div class="w-full h-12 mt-8 bg-[#5DA0C1] flex items-center ">
-                <input class="pl-4 h-12 pr-8 text-white bg-transparent
-                placeholder-white placeholder-opacity-60 max-w-[260px]
+            <div class="w-full h-12 mt-8 bg-[#5DA0C1] flex items-center relative">
+                <input class="pl-4 h-full pr-8 text-white bg-transparent
+                placeholder-white placeholder-opacity-60 w-full
                 focus:outline-none focus:ring-2 focus:ring-white"
                        type="email" id="newsletter-email" placeholder="Votre adresse e-mail">
-                <button type="submit" class="-translate-x-10 bg-[#5DA0C1] p-2 text-white"><i class="far fa-envelope"></i><span class="sr-only">m‘inscrire à la newsletter</span></button>
+                <button type="submit" class="absolute right-0 top-0 bottom-0 bg-[#5DA0C1] p-2 text-white"><i class="far fa-envelope"></i><span class="sr-only">m‘inscrire à la newsletter</span></button>
             </div>
         </form>
     </div>
     <div class="container p-0 py-12 mx-auto text-white text-left not-italic max-w-[260px] border-b-2  border-white border-opacity-10">
-        <h2 class="text-white text-opacity-100 font-semibold mb-6 uppercase">Devenir membre upe</h2>
+        <h2 class="text-white text-opacity-100 font-bold font-dm-bold  mb-6 uppercase">Devenir membre upe</h2>
         <a href="#" title="M'inscrire"
-           class="block bg-secondary rounded-full w-12 min-w-[160px] max-w-max font-bold py-3 px-6 text-[0.8125rem] text-center uppercase tracking-widest
+           class="block bg-secondary rounded-full w-12 min-w-[160px] max-w-max font-bold font-dm-bold py-3 px-6 text-[0.8125rem] text-center uppercase tracking-widest
                   hover:bg-[#55992B] active:bg-[#478024]"
         >Je m'inscris <span class="sr-only">pour devenir un membre</span></a>
     </div>
