@@ -1,9 +1,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "fonts.css";
 body {
-    @apply font-dmsans;
+    @apply font-dm-regular;
 }
 
 .wp-block{

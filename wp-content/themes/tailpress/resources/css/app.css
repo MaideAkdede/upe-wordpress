@@ -2,7 +2,15 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import "fonts.css";
+
 @import "../../node_modules/@fortawesome/fontawesome-pro/css/fontawesome.css";
 @import "../../node_modules/@fortawesome/fontawesome-pro/css/all.css";
 
 @import "custom.css";
+
+@layer components {
+    body{
+        @apply font-dm-regular;
+    }
+}

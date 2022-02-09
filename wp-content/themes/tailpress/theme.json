@@ -12,6 +12,11 @@
           "color": "#00699D"
         },
         {
+          "name": "Primary Dark",
+          "slug": "primary-dark",
+          "color": "#005A86"
+        },
+        {
           "name": "Secondary",
           "slug": "secondary",
           "color": "#62AF31"

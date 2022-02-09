@@ -13,7 +13,9 @@ module.exports = {
     ],
     theme: {
         fontFamily: {
-            'dmsans': ['DMSans-regular']
+            "dm-regular": ["DM Sans Regular"],
+            "dm-bold": ["DM Sans Bold"],
+            "dm-medium": ["DM Sans Medium"]
         },
         container: {
             padding: {
@@ -33,6 +35,7 @@ module.exports = {
         }
     },
     plugins: [
-        tailpress.tailwind
+        tailpress.tailwind,
+        require('@tailwindcss/line-clamp'),
     ]
 };
