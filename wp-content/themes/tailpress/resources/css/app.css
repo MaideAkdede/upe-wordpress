@@ -11,6 +11,6 @@
 
 @layer components {
     body{
-        @apply font-dm-regular;
+        @apply font-dm-regular overflow-x-hidden;
     }
 }
