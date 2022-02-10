@@ -42,8 +42,8 @@ hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
     grid grid-cols-[144px_2fr_3fr] gap-4 rounded-md pr-6 hidden md:grid
     text-white font-dm-bold text-bold text-xs">
         <div class="md:bg-primary-dark flex gap-3 place-content-center items-center h-full rounded-md">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.417"
-                 height="37.109" viewBox="0 0 30.417 37.109">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17"
+                 height="20" viewBox="0 0 30.417 37.109">
                 <defs>
                     <clipPath id="clip-path">
                         <rect id="Rectangle_77" data-name="Rectangle 77" width="30.417" height="37.109" fill="#fff"/>
@@ -81,7 +81,7 @@ hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
         </form>
     </div>
 
-    <div class="mx-auto grid grid-cols-1 gap-x-6 gap-y-8 sm:gap-6 justify-items-center px-6 pb-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+    <div class="mx-auto grid grid-cols-1 gap-x-6 gap-y-8 sm:gap-6 justify-items-center px-6 pb-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-[1280px]">
         <?php for ($x = 1; $x <= 6; $x++): ?>
             <div class="bg-white mx-auto drop-shadow-xl mx-auto sm:mx-0 min-h-max max-w-[560px] text-center py-4 relative rounded-md">
                 <div class="border-b-gray-200 border-b-2 pb-8">
