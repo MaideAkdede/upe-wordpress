@@ -95,7 +95,7 @@ hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
                              alt="image numéro <?= $x ?>"/>
                     </div>
                 </div>
-                <p class="text-[0.8125rem] font-bold font-dm-bold text-gray-400 mt-8">Enseignement</p>
+                <p class="text-pixel-13 font-bold font-dm-bold text-gray-400 mt-8">Enseignement</p>
                 <h2 class="text-xl text-neutral-600 font-bold font-dm-bold line-clamp-2 mt-2 mb-6 mx-4">Lorem ipsum
                     dolor sit amet,
                     consectetur adipisicing elit. Consequuntur illo magnam possimus, quod repellat velit. Aliquid

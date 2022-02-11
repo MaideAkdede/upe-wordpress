@@ -117,7 +117,6 @@
                         </a>
                     </div>
                 </div>
-
                 <div id="primary-menu"
                      class="hidden bg-primary fixed top-0 left-0 w-screen h-screen z-10 text-white text-bold font-dm-bold text-3xl text-right list-none mx-auto grid place-content-center content-around">
                     <ul class="mx-auto max-w-max">

@@ -38,6 +38,10 @@ module.exports = {
                 'pixel-22': '1.375rem',
                 'pixel-39': '2.4375rem',
                 'pixel-46': '46px'
+            },
+            fontSize: {
+                'pixel-13' : '0.8125rem',
+                'pixel-14' : '0.875rem',
             }
         },
         screens: {
