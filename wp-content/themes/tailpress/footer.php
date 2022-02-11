@@ -83,7 +83,7 @@
                 >Je m'inscris <span class="sr-only">pour devenir un membre</span></a>
             </div>
             <div class="sr-only md:not-sr-only md:pt-14">
-                <h2 class="text-white text-opacity-100 font-bold font-dm-bold mb-6 uppercase">Contactez-nous</h2>
+                <h2 class="text-white text-opacity-100 font-bold font-dm-bold mb-6 uppercase"><a href="/contact" title="Accéder à la page de contact">Contactez-nous</a></h2>
                 <div class="text-white text-opacity-60 flex gap-5">
                     <a href="" title="Contactez-nous via Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="" title="Contactez-nous via Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -96,11 +96,11 @@
     <div class="md:bg-primary-dark md:p-6 md:mt-12">
         <div class="md:mx-auto md:container md:flex md:justify-between md:items-center">
             <div class="container p-0 pt-10 pb-12 md:p-0 mx-auto text-left not-italic max-w-[360px] md:border-none md:flex md:max-w-none md:flex md:flex-wrap">
-                <a href="#" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
+                <a href="#" title="Voir et lire les mentions légales" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                             class="mr-2 md:hidden">—</span>Mentions légales</a>
-                <a href="#" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
+                <a href="#" title="Lire la politique des cookies" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                             class="mr-2 md:mx-2">—</span>Politique de cookies</a>
-                <a href="#" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
+                <a href="#" title="Lire les conditions générales de vente" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                             class="mr-2 md:mx-2">—</span>Conditions générales de vente</a>
             </div>
             <div class="bg-primary-dark text-center text-pixel-14 text-white text-opacity-60 py-6 md:py-0">
