@@ -1,6 +1,6 @@
 <?php /* Template Name: Page Boutique */ ?>
 <?php get_header(); ?>
-    <div class=" text-center py-8 text-neutral-600">
+    <div class=" text-center py-8 text-neutral-600 md:pt-0">
         <div class="max-w-max mx-auto relative">
             <h1 class="text-[2.1875rem] font-bold"><?php the_title(); ?></h1>
             <div class="hidden md:block h-12 w-14 absolute bottom-3 -left-11">
@@ -13,7 +13,8 @@
             <a href="/" class="text-primary hover:underline">Accueil</a><span
                     class="ml-1 mr-1">></span><a href="#">Boutique</a></div>
     </div>
-    <button class="bg-primary inline-block h-[73px] w-[64px] rounded-r-md grid gap-1 place-content-center fixed top-[10%] z-[3] left-0
+
+    <button class="bg-primary inline-block h-[73px] w-[64px] rounded-r-md grid gap-1 place-content-center fixed top-[10%] my-8 z-[3] left-0
 hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
         <svg
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.417"

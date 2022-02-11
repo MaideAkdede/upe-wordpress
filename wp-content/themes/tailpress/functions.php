@@ -113,6 +113,30 @@ function tailpress_nav_menu_add_submenu_class($classes, $args, $depth)
 
 add_filter('nav_menu_submenu_css_class', 'tailpress_nav_menu_add_submenu_class', 10, 3);
 
+/**
+ * Adds option 'haschildren_class' to 'wp_nav_menu'.
+ *
+ * @param string $classes String of classes.
+ * @param mixed $item The curren item.
+ * @param WP_Term $args Holds the nav menu arguments.
+ *
+ * @return array
+ */
+function tailpress_nav_menu_add_haschildren_class($classes, $args, $depth)
+{
+    if (isset($args->haschildren_class)) {
+        $classes[] = $args->haschildren_class;
+    }
+
+    if (isset($args->{"haschildren_class_$depth"})) {
+        $classes[] = $args->{"haschildren_class_$depth"};
+    }
+
+    return $classes;
+}
+
+add_filter('nav_menu_submenu_css_class', 'tailpress_nav_menu_add_haschildren_class', 10, 3);
+
 /* * * RegisterCustom Post Type * * */
 add_action('init', 'tailpress_custom_post_type');
 function tailpress_custom_post_type()
