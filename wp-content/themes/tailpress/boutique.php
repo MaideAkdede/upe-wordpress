@@ -20,18 +20,18 @@ hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.417"
                 height="37.109" viewBox="0 0 30.417 37.109">
             <defs>
-                <clipPath id="clip-path">
-                    <rect id="Rectangle_77" data-name="Rectangle 77" width="30.417" height="37.109" fill="#fff"/>
+                <clipPath id="clip-path-filter">
+                    <rect width="30.417" height="37.109" fill="#fff"/>
                 </clipPath>
             </defs>
-            <g id="Groupe_94" data-name="Groupe 94" clip-path="url(#clip-path)">
-                <path id="Tracé_43" data-name="Tracé 43"
+            <g clip-path="url(#clip-path-filter)">
+                <path
                       d="M3.668,24.475V.71a.71.71,0,1,0-1.42,0V24.475a2.954,2.954,0,0,0,0,5.736V36.4a.71.71,0,0,0,1.42,0V30.211a2.954,2.954,0,0,0,0-5.736"
                       fill="#fff"/>
-                <path id="Tracé_44" data-name="Tracé 44"
+                <path
                       d="M38.168,11.6V.71a.71.71,0,1,0-1.42,0V11.6a2.954,2.954,0,0,0,0,5.736V36.4a.71.71,0,0,0,1.42,0V17.338a2.954,2.954,0,0,0,0-5.736"
                       transform="translate(-22.249)" fill="#fff"/>
-                <path id="Tracé_45" data-name="Tracé 45"
+                <path
                       d="M72.668,3.347V.71a.71.71,0,1,0-1.42,0V3.347a2.954,2.954,0,0,0,0,5.736V36.4a.71.71,0,0,0,1.42,0V9.082a2.954,2.954,0,0,0,0-5.736"
                       transform="translate(-44.498)" fill="#fff"/>
             </g>
