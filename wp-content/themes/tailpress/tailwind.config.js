@@ -26,6 +26,15 @@ module.exports = {
         },
         extend: {
             colors: tailpress.colorMapper(tailpress.theme('settings.color.palette', theme)),
+            backgroundImage: {
+                'desktop-bg': "url('../images/svg.svg')",
+            },
+            width: {
+                'pixel-46': '46px'
+            },
+            height: {
+                'pixel-46': '46px'
+            }
         },
         screens: {
             'sm': '640px',
