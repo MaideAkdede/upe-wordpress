@@ -50,12 +50,13 @@
                         <?php } ?>
                     </div>
                     <div class="z-20 flex items-center">
-                        <div class="border-r border-primary border-opacity-20 px-4 relative md:pl-0">
+                        <?php if(is_page_template('boutique.php')):?>
+                        <div class="border-r border-primary border-opacity-20 px-4 relative">
                             <a href=""
-                               class="grid place-content-center h-pixel-46 w-pixel-46 rounded-full border border-primary hover:bg-secondary hover:bg-opacity-20 active:bg-opacity-40"><span
+                               class="grid place-content-center h-pixel-46 w-pixel-46 md:h-pixel-39 md:w-pixel-39 rounded-full border border-primary hover:bg-secondary hover:bg-opacity-20 active:bg-opacity-40"><span
                                         class="sr-only">Accéder à mon panier</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                     width="25.404" height="23.098" viewBox="0 0 25.404 23.098">
+                                <svg class="w-[25px] h-[23px] md:w-[19px] md:h-[17px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="100%" height="100%" viewBox="0 0 25.404 23.098">
                                     <defs>
                                         <clipPath id="clip-path-cart">
                                             <rect id="Rectangle_53" data-name="Rectangle 53" width="25.404"
@@ -81,9 +82,10 @@
                                 12
                             </div>
                         </div>
-                        <div class="border-r border-primary border-opacity-20 px-4 md:border-none md:pr-0">
+                        <?php endif;?>
+                        <div class="border-primary border-opacity-20 px-4 border-r md:border-l md:border-r-0 md:pr-0">
                             <a href=""
-                               class="grid place-content-center h-pixel-46 w-pixel-46 rounded-full border border-primary md:w-max md:px-5 hover:bg-secondary hover:bg-opacity-20 active:bg-opacity-40"><span
+                               class="grid place-content-center h-pixel-46 md:h-pixel-39 w-pixel-46 rounded-full border border-primary md:w-max md:px-5 hover:bg-secondary hover:bg-opacity-20 active:bg-opacity-40"><span
                                         class="sr-only md:not-sr-only uppercase text-sm text-bold text-primary font-dm-bold tracking-widest">Espace membres</span>
                                 <svg class="md:hidden" id="Groupe_90" data-name="Groupe 90"
                                      xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +109,7 @@
                             </a>
                         </div>
                         <a href="#" aria-label="Toggle navigation" id="primary-menu-toggle"
-                           class="md:order-first block px-4 h-6 text-right flex flex-col items-end justify-between">
+                           class="md:order-first block pl-4 md:px-4 h-6 text-right flex flex-col items-end justify-between">
                             <span class="sr-only">Ouvrir le menu de navigation</span>
                             <span class="menu_line block w-10 h-0.5 bg-gray-600"></span>
                             <span class="menu_line block w-12 h-0.5 bg-gray-600"></span>
@@ -115,6 +117,7 @@
                         </a>
                     </div>
                 </div>
+
                 <div id="primary-menu"
                      class="hidden bg-primary fixed top-0 left-0 w-screen h-screen z-10 text-white text-bold font-dm-bold text-3xl text-right list-none mx-auto grid place-content-center content-around">
                     <ul class="mx-auto max-w-max">
@@ -125,7 +128,7 @@
                         <li class="w-[370px] border-b border-white border-opacity-10 py-8 relative">L'ergothérapie<i
                                     class="absolute ml-6 -mt-2 top-1/2 text-base text-white text-opacity-60  fa-solid fa-sort-down"></i>
                         </li>
-                        <li class="w-[370px] border-b border-white border-opacity-10 py-8">Boutique</li>
+                        <li class="w-[370px] border-b border-white border-opacity-10 py-8"><a href="./boutique">Boutique</a></li>
                         <li class="w-[370px] border-b border-white border-opacity-10 py-8">Actualités</li>
                         <li class="w-[370px] py-8">Formation continue</li>
                     </ul>

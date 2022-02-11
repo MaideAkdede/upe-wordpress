@@ -30,9 +30,13 @@ module.exports = {
                 'desktop-bg': "url('../images/svg.svg')",
             },
             width: {
+                'pixel-22': '1.375rem',
+                'pixel-39': '2.4375rem',
                 'pixel-46': '46px'
             },
             height: {
+                'pixel-22': '1.375rem',
+                'pixel-39': '2.4375rem',
                 'pixel-46': '46px'
             }
         },

@@ -1,6 +1,6 @@
 <?php /* Template Name: Page Boutique */ ?>
 <?php get_header(); ?>
-    <div class=" text-center py-8 text-neutral-600 md:pt-0">
+    <div class=" text-center py-8 text-neutral-600 md:pt-0 lg:-mt-12">
         <div class="max-w-max mx-auto relative">
             <h1 class="text-[2.1875rem] font-bold"><?php the_title(); ?></h1>
             <div class="hidden md:block h-12 w-14 absolute bottom-3 -left-11">
@@ -67,13 +67,13 @@ hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
         <button class="uppercase justify-self-center self-center max-w-[150px] h-10 rounded-full bg-transparent hover:bg-primary-dark border-2 border-white text-white flex items-center min-w-max px-6">
             <p>Catégories<i class="fa-solid fa-caret-down ml-2"></i></p>
         </button>
-        <form action="" class="h-10 self-center">
+        <form action="#" class="h-10 self-center" method="get">
             <label for="search" class="sr-only">Rechercher</label>
             <div class="w-full h-full bg-[#2E84AF] flex items-center relative rounded-full">
                 <input class="pl-4 h-full pr-8 text-white bg-transparent
-                placeholder-white w-full uppercase
+                placeholder-white w-full
                 focus:outline-none focus:ring-2 focus:ring-white focus:rounded-full"
-                       type="text" id="search" placeholder="RECHERCHER UN ÉVÈNEMENT">
+                       name="search" type="text" id="search" placeholder="RECHERCHER UN ÉVÈNEMENT">
                 <button type="submit" class="absolute right-0 top-0 bottom-0 p-2 text-white"><i
                             class="fa-solid fa-magnifying-glass text-white text-opacity-60 mr-2.5"></i>
                     <span class="sr-only">lancer ma recherche de filtrage</span>
