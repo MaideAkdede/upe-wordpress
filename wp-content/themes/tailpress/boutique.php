@@ -89,8 +89,8 @@ hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
                     <div class="absolute top-0 left-0 m-4 z-[2] h-[4.375rem] w-[4.375rem] bg-secondary rounded-full flex items-center justify-center">
                         <p class="font-bold font-dm-bold text-white"><?= $x ?>2,50€</p>
                     </div>
-                    <div class="mx-auto mt-4 drop-shadow-xl w-[50%] max-w-[250px] max-h-[400px] bg-[#E9F2F7]">
-                        <img class="object-cover w-full h-full"
+                    <div class="mx-auto mt-4 drop-shadow-xl w-[200px] h-[250px]">
+                        <img class="object-contain w-full h-full"
                              src="<?php echo get_template_directory_uri() . '/resources/images/boutique/1.jpeg' ?>"
                              alt="image numéro <?= $x ?>"/>
                     </div>
