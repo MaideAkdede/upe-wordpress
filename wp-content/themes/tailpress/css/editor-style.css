@@ -417,6 +417,22 @@
   height: 1.25rem
 }
 
+.h-\[400px\] {
+  height: 400px
+}
+
+.h-\[30px\] {
+  height: 30px
+}
+
+.h-\[300px\] {
+  height: 300px
+}
+
+.h-\[250px\] {
+  height: 250px
+}
+
 .max-h-\[400px\] {
   max-height: 400px
 }
@@ -491,6 +507,10 @@
   width: 1.25rem
 }
 
+.w-\[200px\] {
+  width: 200px
+}
+
 .min-w-max {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -533,6 +553,10 @@
 
 .max-w-\[260px\] {
   max-width: 260px
+}
+
+.max-w-\[200px\] {
+  max-width: 200px
 }
 
 .flex-grow {
@@ -784,6 +808,11 @@
 
 .bg-no-repeat {
   background-repeat: no-repeat
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain
 }
 
 .object-cover {
@@ -1249,6 +1278,15 @@ body {
   background-color: rgb(85 153 43 / var(--tw-bg-opacity))
 }
 
+.hover\:bg-secondary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(98 175 49 / var(--tw-bg-opacity))
+}
+
+.hover\:bg-opacity-20:hover {
+  --tw-bg-opacity: 0.2
+}
+
 .hover\:text-opacity-100:hover {
   --tw-text-opacity: 1
 }
@@ -1286,6 +1324,10 @@ body {
 .active\:bg-\[\#478024\]:active {
   --tw-bg-opacity: 1;
   background-color: rgb(71 128 36 / var(--tw-bg-opacity))
+}
+
+.active\:bg-opacity-40:active {
+  --tw-bg-opacity: 0.4
 }
 
 @media (min-width: 640px) {

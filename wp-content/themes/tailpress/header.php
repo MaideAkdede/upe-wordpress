@@ -50,9 +50,9 @@
                         <?php } ?>
                     </div>
                     <div class="z-20 flex items-center">
-                        <div class="border-r border-primary border-opacity-20 px-4 relative">
+                        <div class="border-r border-primary border-opacity-20 px-4 relative md:pl-0">
                             <a href=""
-                               class="grid place-content-center h-pixel-46 w-pixel-46 rounded-full border border-primary"><span
+                               class="grid place-content-center h-pixel-46 w-pixel-46 rounded-full border border-primary hover:bg-secondary hover:bg-opacity-20 active:bg-opacity-40"><span
                                         class="sr-only">Accéder à mon panier</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      width="25.404" height="23.098" viewBox="0 0 25.404 23.098">
@@ -77,13 +77,16 @@
                                     </g>
                                 </svg>
                             </a>
-                            <div class="rounded-full bg-secondary h-5 w-5 absolute -top-2 right-4 text-white text-xs text-bold font-dm-bold grid place-content-center">12</div>
+                            <div class="rounded-full bg-secondary h-5 w-5 absolute -top-2 right-4 text-white text-xs text-bold font-dm-bold grid place-content-center">
+                                12
+                            </div>
                         </div>
                         <div class="border-r border-primary border-opacity-20 px-4 md:border-none md:pr-0">
                             <a href=""
-                               class="grid place-content-center h-pixel-46 w-pixel-46 rounded-full border border-primary md:w-max md:px-5"><span
+                               class="grid place-content-center h-pixel-46 w-pixel-46 rounded-full border border-primary md:w-max md:px-5 hover:bg-secondary hover:bg-opacity-20 active:bg-opacity-40"><span
                                         class="sr-only md:not-sr-only uppercase text-sm text-bold text-primary font-dm-bold tracking-widest">Espace membres</span>
-                                <svg class="md:hidden" id="Groupe_90" data-name="Groupe 90" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="md:hidden" id="Groupe_90" data-name="Groupe 90"
+                                     xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" width="16.822" height="21.671"
                                      viewBox="0 0 16.822 21.671">
                                     <defs>
