@@ -64,8 +64,8 @@ hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
             </svg>
             <span class="uppercase">Filtres</span>
         </div>
-        <button class="uppercase justify-self-center self-center max-w-[150px] h-10 rounded-full bg-transparent hover:bg-primary-dark border-2 border-white text-white flex items-center min-w-max px-6">
-            <p>Catégories<i class="fa-solid fa-caret-down ml-2"></i></p>
+        <button class="uppercase justify-self-center self-center max-w-[150px] h-10 rounded-full bg-transparent hover:bg-primary-dark border border-white text-white flex items-center min-w-max px-6">
+            Catégories<i class="fa-solid fa-caret-down ml-2"></i>
         </button>
         <form action="#" class="h-10 self-center" method="get">
             <label for="search" class="sr-only">Rechercher</label>
@@ -74,8 +74,8 @@ hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
                 placeholder-white w-full
                 focus:outline-none focus:ring-2 focus:ring-white focus:rounded-full"
                        name="search" type="text" id="search" placeholder="RECHERCHER UN ÉVÈNEMENT">
-                <button type="submit" class="absolute right-0 top-0 bottom-0 p-2 text-white"><i
-                            class="fa-solid fa-magnifying-glass text-white text-opacity-60 mr-2.5"></i>
+                <button type="submit" class="absolute right-0 top-0 bottom-0 p-2 text-white">
+                    <i class="fa-solid fa-magnifying-glass text-white text-opacity-60 mr-2.5"></i>
                     <span class="sr-only">lancer ma recherche de filtrage</span>
                 </button>
             </div>

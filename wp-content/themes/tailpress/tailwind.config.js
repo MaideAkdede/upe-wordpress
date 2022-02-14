@@ -15,7 +15,8 @@ module.exports = {
         fontFamily: {
             "dm-regular": ["DM Sans Regular"],
             "dm-bold": ["DM Sans Bold"],
-            "dm-medium": ["DM Sans Medium"]
+            "dm-medium": ["DM Sans Medium"],
+            "font-awesome": ["Font Awesome 6 Pro"],
         },
         container: {
             padding: {
