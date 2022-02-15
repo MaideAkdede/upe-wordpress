@@ -70,5 +70,6 @@ module.exports = {
     plugins: [
         tailpress.tailwind,
         require('@tailwindcss/line-clamp'),
+        require('tailwind-scrollbar-hide')
     ]
 };

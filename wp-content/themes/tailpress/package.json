@@ -45,6 +45,7 @@
 		"@fortawesome/fontawesome-free": "^5.15.4",
 		"@fortawesome/fontawesome-pro": "^6.0.0",
 		"@tailwindcss/line-clamp": "^0.3.1",
-		"font-awesome": "^4.7.0"
+		"font-awesome": "^4.7.0",
+		"tailwind-scrollbar-hide": "^1.1.7"
 	}
 }

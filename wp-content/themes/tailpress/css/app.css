@@ -1820,6 +1820,15 @@ body {
   -webkit-line-clamp: 2;
 }
 
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: 'DM Sans Regular';
 
