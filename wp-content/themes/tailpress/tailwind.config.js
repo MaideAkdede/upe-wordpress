@@ -31,6 +31,9 @@ module.exports = {
                 'desktop-bg': "url('../images/bg/header.svg')",
                 'footer-bg': "url('../images/bg/footer.svg')",
             },
+            backgroundColor:{
+                'bullet-gray': '#EAEAEA',
+            },
             gridTemplateColumns: {
                 'footer-md': 'repeat(3, minmax(0, max-content))',
                 'footer-lg': 'repeat(4, minmax(0, max-content))',

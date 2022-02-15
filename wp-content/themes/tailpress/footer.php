@@ -3,15 +3,22 @@
 </div>
 
 <?php do_action('tailpress_content_after'); ?>
-<div class="flex overflow-x-auto py-12">
-    <?php for ($x = 1; $x <= 6; $x++): ?>
-        <figure class="h-[100px] min-w-full sm:min-w-[50%] md:min-w-[33%] lg:min-w-[25%] xl:min-w-[250px] xl:gap-7 relative">
-            <img class="backdrop-grayscale h-full w-full object-contain" src="<?php echo get_template_directory_uri() . '/resources/images/home-slider/'.$x.'.png' ?>"
-                 alt="Image of">
-            <div class="absolute backdrop-grayscale block bg-white/30 h-full w-full top-0"></div>
-            <figcaption class="sr-only">ghjk</figcaption>
-        </figure>
-    <?php endfor; ?>
+<div class="py-6">
+    <div class="flex overflow-x-auto my-6">
+        <?php for ($x = 1; $x <= 6; $x++): ?>
+            <figure class="h-[100px] min-w-full sm:min-w-[50%] md:min-w-[33%] lg:min-w-[25%] xl:min-w-[250px] xl:gap-7 relative">
+                <img class="backdrop-grayscale h-full w-full object-contain" src="<?php echo get_template_directory_uri() . '/resources/images/home-slider/'.$x.'.png' ?>"
+                     alt="Image of">
+                <div class="absolute backdrop-grayscale block bg-white/30 h-full w-full top-0"></div>
+                <figcaption class="sr-only">ghjk</figcaption>
+            </figure>
+        <?php endfor; ?>
+    </div>
+    <div class="text-center py-6">
+        <button class="inline-block h-2.5 w-2.5 rounded-full bg-bullet-gray m-1"><span class="sr-only">Slider précedent</span></button>
+        <button class="inline-block h-2.5 w-2.5 rounded-full bg-primary m-1"><span class="sr-only">Slider actuel</span></button>
+        <button class="inline-block h-2.5 w-2.5 rounded-full bg-bullet-gray m-1"><span class="sr-only">Slider suivant</span></button>
+    </div>
 </div>
 <footer id="colophon"
         class="site-footer relative h-auto w-screen bg-primary lg:bg-footer-bg lg:bg-cover lg:bg-center lg:bg-no-repeat"
