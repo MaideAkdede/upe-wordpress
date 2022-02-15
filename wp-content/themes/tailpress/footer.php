@@ -4,10 +4,11 @@
 
 <?php do_action('tailpress_content_after'); ?>
 <div class="flex overflow-x-auto py-12">
-    <?php for ($x = 1; $x <= 15; $x++): ?>
-        <figure class="h-[100px] min-w-full sm:min-w-[50%] md:min-w-[33%] lg:min-w-[25%] xl:min-w-[250px] xl:gap-7">
-            <img class="h-full w-full object-contain" src="<?php echo get_template_directory_uri() . '/resources/images/home-slider/1.png' ?>"
+    <?php for ($x = 1; $x <= 6; $x++): ?>
+        <figure class="h-[100px] min-w-full sm:min-w-[50%] md:min-w-[33%] lg:min-w-[25%] xl:min-w-[250px] xl:gap-7 relative">
+            <img class="backdrop-grayscale h-full w-full object-contain" src="<?php echo get_template_directory_uri() . '/resources/images/home-slider/'.$x.'.png' ?>"
                  alt="Image of">
+            <div class="absolute backdrop-grayscale block bg-white/30 h-full w-full top-0"></div>
             <figcaption class="sr-only">ghjk</figcaption>
         </figure>
     <?php endfor; ?>
