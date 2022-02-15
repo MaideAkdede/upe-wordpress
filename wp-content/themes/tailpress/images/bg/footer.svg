@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 555.999">
+    <defs>
+        <clipPath id="b">
+            <path fill="none" d="M0 0h1920v555.999H0z" data-name="Rectangle 70"/>
+        </clipPath>
+        <clipPath id="c">
+            <path fill="none" d="M0 0h3110v3110.001H0z" data-name="Rectangle 65"/>
+        </clipPath>
+        <clipPath id="d">
+            <path fill="none" d="M2423 248c858.8 0 1555 696.2 1555 1555s-696.2 1555-1555 1555S868 2661.8 868 1803 1564.2 248 2423 248" data-name="Tracé 34" transform="translate(-868 -248.001)"/>
+        </clipPath>
+        <clipPath id="e">
+            <path fill="none" d="M0 0h3110v3110H0z" data-name="Rectangle 67"/>
+        </clipPath>
+        <clipPath id="f">
+            <path fill="none" d="M1555 612c858.8 0 1555 696.2 1555 1555s-696.2 1555-1555 1555S0 3025.8 0 2167 696.2 612 1555 612" data-name="Tracé 35" transform="translate(0 -612)"/>
+        </clipPath>
+        <clipPath id="h">
+            <path fill="none" d="M2908.474 0c858.8 0 1555 696.2 1555 1555s-696.2 1555-1555 1555-1555-696.2-1555-1555 696.2-1555 1555-1555" data-name="Tracé 36" transform="translate(-1353.474 -.001)"/>
+        </clipPath>
+        <radialGradient id="a" cx="-.279" cy="1.117" r="0" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#00699d"/>
+            <stop offset="1" stop-color="#035984"/>
+        </radialGradient>
+        <radialGradient xlink:href="#a" id="g" cx="0" cy="1" r="0"/>
+        <radialGradient xlink:href="#a" id="i" cx="-.435" cy="1.197" r="0"/>
+    </defs>
+    <g clip-path="url(#b)" data-name="Groupe 48">
+        <g data-name="Groupe 37" opacity=".58" style="isolation:isolate">
+            <g data-name="Groupe 36">
+                <g clip-path="url(#c)" data-name="Groupe 35" transform="translate(365 -192.582)">
+                    <g data-name="Groupe 34">
+                        <g clip-path="url(#d)" data-name="Groupe 33" transform="translate(0 .001)">
+                            <path fill="url(#a)" d="M0 0h3110v3110H0z" data-name="Rectangle 64"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g data-name="Groupe 42" opacity=".32" style="isolation:isolate">
+            <g data-name="Groupe 41">
+                <g clip-path="url(#e)" data-name="Groupe 40" transform="translate(-503 171.418)">
+                    <g data-name="Groupe 39">
+                        <g clip-path="url(#f)" data-name="Groupe 38">
+                            <path fill="url(#g)" d="M0 0h3110v3110H0z" data-name="Rectangle 66"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g data-name="Groupe 47" opacity=".999" style="isolation:isolate">
+            <g data-name="Groupe 46">
+                <g clip-path="url(#c)" data-name="Groupe 45" transform="translate(850.47 -440.582)">
+                    <g data-name="Groupe 44">
+                        <g clip-path="url(#h)" data-name="Groupe 43" transform="translate(.004 .001)">
+                            <path fill="url(#i)" d="M0 0h3110v3110H0z" data-name="Rectangle 68"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

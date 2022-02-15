@@ -28,21 +28,33 @@ module.exports = {
         extend: {
             colors: tailpress.colorMapper(tailpress.theme('settings.color.palette', theme)),
             backgroundImage: {
-                'desktop-bg': "url('../images/svg.svg')",
+                'desktop-bg': "url('../images/bg/header.svg')",
+                'footer-bg': "url('../images/bg/footer.svg')",
+            },
+            gridTemplateColumns: {
+                'footer-md': 'repeat(3, minmax(0, max-content))',
+                'footer-lg': 'repeat(4, minmax(0, max-content))',
             },
             width: {
                 'pixel-22': '1.375rem',
                 'pixel-39': '2.4375rem',
-                'pixel-46': '46px'
+                'pixel-46': '46px',
+                'pixel-360': '360px'
             },
             height: {
                 'pixel-22': '1.375rem',
                 'pixel-39': '2.4375rem',
-                'pixel-46': '46px'
+                'pixel-46': '46px',
+                'pixel-250': '250px'
             },
             fontSize: {
                 'pixel-13' : '0.8125rem',
                 'pixel-14' : '0.875rem',
+                'pixel-35' : '2.1875rem',
+                'pixel-50' : '3.125rem',
+            },
+            margin: {
+                'pixel-25' : '25px',
             }
         },
         screens: {

@@ -3,13 +3,23 @@
 </div>
 
 <?php do_action('tailpress_content_after'); ?>
-
-<footer id="colophon" class="site-footer bg-primary pt-16" role="contentinfo">
+<div class="grid gap-6 grid-flow-col overflow-y-auto py-12">
+    <?php for ($x = 1; $x <= 6; $x++): ?>
+        <figure>
+            <img src="<?php echo get_template_directory_uri() . '/resources/images/home-slider/' . $x . '.png' ?>"
+                 alt="Image of <?= $x;?>">
+            <figcaption class="sr-only"><?= $x;?></figcaption>
+        </figure>
+    <?php endfor; ?>
+</div>
+<footer id="colophon"
+        class="site-footer relative h-auto w-screen bg-primary lg:bg-footer-bg lg:bg-cover lg:bg-center lg:bg-no-repeat"
+        role="contentinfo">
     <h1 class="sr-only">Pied de page</h1>
     <?php do_action('tailpress_footer'); ?>
-    <div class="md:container md:mx-auto md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-7 md:justify-items-start">
-        <div class="-mt-[25px] container mx-auto text-white text-left text-opacity-60 not-italic md:max-w-none max-w-[360px] md:border-none border-b-2 p-0 pb-8 border-white border-opacity-10">
-            <div class="mx-auto mb-8 flex items-center content-center justify-center sm:gap-4">
+    <div class="md:container md:mx-auto md:grid md:grid-cols-footer-md lg:grid-cols-footer-lg md:gap-7 justify-between mt-24">
+        <div class="-mt-pixel-25 mx-auto text-white text-left text-opacity-60 not-italic max-w-sm md:border-none border-b-2 p-0 pb-8 border-white border-opacity-10">
+            <div class="mb-8 flex items-center justify-center md:justify-start sm:gap-4">
                 <img class="" src="<?php echo get_template_directory_uri() . '/resources/images/logo.svg' ?>"
                      alt="<?= get_bloginfo('name'); ?>" width="70" height="70">
                 <p class="sr-only uppercase text-white text-opacity-100 font-bold font-dm-bold sm:not-sr-only"><?= get_bloginfo('name'); ?></p>
@@ -19,18 +29,20 @@
                     <div class="w-4 mr-2.5 inline-block">
                         <i class="fas fa-directions text-secondary pt-[7px]"></i>
                     </div>
-                    <p>Avenue J. Burgers 2 Bte 25, <br>
+                    <p>Avenue J. Burgers 2 Bte 25,<br>
                         1180 Uccle (Belgique)</p>
                 </div>
-                <a href="mailto:jim@rock.com" class="block mb-6" title="Envoyer un mail à l'adresse suivante">
+                <a href="mailto:jim@rock.com" class="block mb-6 hover:text-white"
+                   title="Envoyer un mail à l'adresse suivante">
                     <div class="w-4 mr-2.5 inline-block">
                         <i class="fas fa-envelope text-secondary"></i>
                     </div>
                     contact@ergo-upe.be
                 </a>
-                <a href="tel:0032222222222" class="block mb-6" title="Téléphoner au numéro de téléphone suivant">
+                <a href="tel:0032222222222" class="block mb-6 hover:text-white"
+                   title="Téléphoner au numéro de téléphone suivant">
                     <div class="w-4 mr-2.5 inline-block">
-                        <i class="fas fa-phone text-secondary"></i>
+                        <i class="fa-solid fa-phone-flip text-secondary"></i>
                     </div>
                     02/222.22.22
                 </a>
@@ -42,14 +54,17 @@
                 <p> BE75 2100 2615 1151</p>
             </div>
         </div>
-        <div class="hidden lg:block container py-1 md:py-0 mx-auto text-pixel-14 text-left not-italic md:max-w-none  max-w-[360px]">
+        <div class="hidden lg:block container py-1 md:py-0 mx-auto text-pixel-14 text-left not-italic max-w-sm">
             <h2 class="text-white text-opacity-100 font-bold font-dm-bold mb-6 uppercase">Menu</h2>
-            <a href="/" title="Accéder à la page XXX" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
+            <a href="/" title="Accéder à la page XXX"
+               class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                         class="mr-2">—</span>Accueil</a>
-            <a href="#" title="Accéder à la page XXX" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
+            <a href="#" title="Accéder à la page XXX"
+               class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                         class="mr-2">—</span>Qui
                 sommes-nous ?</a>
-            <a href="#" title="Accéder à la page XXX" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
+            <a href="#" title="Accéder à la page XXX"
+               class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                         class="mr-2">—</span>L'ergothérapie</a>
             <a href="./boutique" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                         title="Accéder à la page XXX" class="mr-2">—</span>Boutique</a>
@@ -58,7 +73,7 @@
             <a href="./boutique" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                         title="Accéder à la page XXX" class="mr-2">—</span>Formation continue</a>
         </div>
-        <div class="container p-0 py-12 md:py-0 mx-auto text-white text-opacity-60 text-left not-italic md:max-w-none  max-w-[360px] leading-8 md:border-none border-b-2  border-white border-opacity-10">
+        <div class="py-12 md:py-0 mx-auto text-white text-opacity-60 text-left not-italic max-w-sm leading-8 md:border-none border-b-2  border-white border-opacity-10">
             <h2 class="text-white text-opacity-100 font-bold font-dm-bold mb-6 uppercase">Newsletter</h2>
             <p class="">Inscrivez-vous à notre newsletter et restez aux courants de nos dernières actualités</p>
             <form action="" method="POST">
@@ -74,7 +89,7 @@
                 </div>
             </form>
         </div>
-        <div class="container p-0 py-12 md:py-0 mx-auto text-white text-left not-italic md:max-w-none  max-w-[360px] border-b-2 md:border-none border-white border-opacity-10">
+        <div class="py-12 md:py-0 mx-auto lg:ml-auto text-white text-left not-italic max-w-sm border-b-2 md:border-none border-white border-opacity-10">
             <div>
                 <h2 class="text-white text-opacity-100 font-bold font-dm-bold  mb-6 uppercase">Devenir membre upe</h2>
                 <a href="#" title="M‘inscrire en tant que membre"
@@ -83,24 +98,37 @@
                 >Je m'inscris <span class="sr-only">pour devenir un membre</span></a>
             </div>
             <div class="sr-only md:not-sr-only md:pt-14">
-                <h2 class="text-white text-opacity-100 font-bold font-dm-bold mb-6 uppercase"><a href="/contact" title="Accéder à la page de contact">Contactez-nous</a></h2>
+                <h2 class="text-white text-opacity-100 font-bold font-dm-bold uppercase"><a href="/contact"
+                                                                                            title="Accéder à la page de contact">Contactez-nous</a>
+                </h2>
                 <div class="text-white text-opacity-60 flex gap-5">
-                    <a href="" title="Contactez-nous via Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="" title="Contactez-nous via Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="mail:mail@mail.com" title="Contactez-nous par email"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="tel:0000" title="Contactez-nous par téléphone"><i class="fa-solid fa-phone-flip"></i></a>
+                    <a href="" title="Contactez-nous via Facebook"
+                       class="py-6 hover:text-white hover:right-1 hover:scale-150"><span class="sr-only">Contactez-nous via Facebook</span><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                    <a href="" title="Contactez-nous via Linkdin"
+                       class="py-6 hover:text-white hover:right-1 hover:scale-150"><span class="sr-only">Contactez-nous via Linkdin</span><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mail:mail@mail.com" title="Contactez-nous par email"
+                       class="py-6 hover:text-white hover:right-1 hover:scale-150"><span class="sr-only">Contactez-nous par mail</span><i
+                                class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:0000" title="Contactez-nous par téléphone"
+                       class="py-6 hover:text-white hover:right-1 hover:scale-150"><span class="sr-only">Contactez-nous par téléphone</span><i
+                                class="fa-solid fa-phone-flip"></i></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="md:bg-primary-dark md:p-6 md:mt-12">
         <div class="md:mx-auto md:container md:flex md:justify-between md:items-center">
-            <div class="container p-0 pt-10 pb-12 md:p-0 mx-auto text-left not-italic max-w-[360px] md:border-none md:flex md:max-w-none md:flex md:flex-wrap">
-                <a href="#" title="Voir et lire les mentions légales" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
+            <div class="container p-0 pt-10 pb-12 max-w-sm md:max-w-none md:p-0 mx-auto text-left not-italic md:border-none md:flex md:flex md:flex-wrap">
+                <a href="#" title="Voir et lire les mentions légales"
+                   class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                             class="mr-2 md:hidden">—</span>Mentions légales</a>
-                <a href="#" title="Lire la politique des cookies" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
+                <a href="#" title="Lire la politique des cookies"
+                   class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                             class="mr-2 md:mx-2">—</span>Politique de cookies</a>
-                <a href="#" title="Lire les conditions générales de vente" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
+                <a href="#" title="Lire les conditions générales de vente"
+                   class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                             class="mr-2 md:mx-2">—</span>Conditions générales de vente</a>
             </div>
             <div class="bg-primary-dark text-center text-pixel-14 text-white text-opacity-60 py-6 md:py-0">

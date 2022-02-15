@@ -2,9 +2,9 @@
 <?php get_header(); ?>
     <div class=" text-center py-8 text-neutral-600 md:pt-0 lg:-mt-12">
         <div class="max-w-max mx-auto relative">
-            <h1 class="text-[2.1875rem] font-bold"><?php the_title(); ?></h1>
+            <h1 class="text-pixel-35 lg:text-pixel-50 font-bold"><?php the_title(); ?></h1>
             <div class="hidden md:block h-12 w-14 absolute bottom-3 -left-11">
-                <img class="object-fill w-full h-full -z-[-1] opacity-10"
+                <img class="object-fill w-full h-full -z-[1] opacity-10"
                      src="<?php echo get_template_directory_uri() . '/resources/images/boutique/title-filigrane.svg' ?>"
                      alt="<?php the_title(); ?>"/>
             </div>
@@ -36,7 +36,7 @@ hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
                       transform="translate(-44.498)" fill="#fff"/>
             </g>
         </svg>
-        <span class="uppercase text-white text-opacity-60 text-[0.5rem] leading-3">Filtrer</span>
+        <span class="uppercase text-white text-opacity-60 text-xs leading-3">Filtrer</span>
     </button>
 
     <div class="bg-primary mx-auto my-8 max-w-[685px] h-20

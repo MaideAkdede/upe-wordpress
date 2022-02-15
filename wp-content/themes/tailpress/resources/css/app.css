@@ -10,7 +10,31 @@
 @import "custom.css";
 
 @layer components {
-    body{
+    body {
         @apply font-dm-regular overflow-x-hidden;
+    }
+    .custom-logo-link {
+        @apply block h-full w-full;
+    }
+    .custom-logo {
+        @apply h-full w-full;
+    }
+    .not-active_menu-elements{
+        @apply border-primary;
+    }
+    .active_menu-elements{
+        @apply border-white;
+    }
+    .not-active_menu-button{
+        @apply text-primary border border-primary hover:bg-secondary hover:bg-opacity-20 active:bg-opacity-40;
+    }
+    .active_menu-button{
+        @apply text-white border-secondary bg-secondary hover:contrast-125 active:contrast-150 ;
+    }
+    .active-cart{
+        @apply bg-[#e9eff4] border-secondary;
+    }
+    .not-active_cart{
+        @apply bg-transparent border-primary;
     }
 }
