@@ -3,7 +3,7 @@
 </div>
 
 <?php do_action('tailpress_content_after'); ?>
-<div class="py-6">
+<div class="py-6 bg-white">
     <div class="flex xl:justify-center overflow-x-auto my-6 scrollbar-hide ">
         <?php for ($x = 1; $x <= 6; $x++): ?>
             <figure class="h-[100px] min-w-full sm:min-w-[50%] md:min-w-[33%] lg:min-w-[25%] xl:min-w-[250px] xl:gap-7 relative">
