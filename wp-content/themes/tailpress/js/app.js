@@ -7,6 +7,11 @@
     let memberButton = document.querySelector("#button-member");
     let cart = document.querySelector(".cart");
     let bg = document.querySelector(".menu-bg");
+    let catbtn = document.querySelector(".category-toggle");
+    let catdrop = document.querySelector(".category-dropdown");
+    catbtn.addEventListener("click", (e) => {
+      catdrop.classList.toggle("hidden");
+    });
     document.querySelector("#primary-menu-toggle").addEventListener("click", function(e) {
       e.preventDefault();
       main_navigation.classList.toggle("hidden");

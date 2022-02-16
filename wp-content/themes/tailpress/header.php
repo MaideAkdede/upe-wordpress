@@ -136,7 +136,7 @@
                         <li class="border-b border-white border-opacity-10 py-8 relative">L'ergothérapie<i
                                     class="absolute ml-6 -mt-2 top-1/2 text-base text-white text-opacity-60  fa-solid fa-sort-down"></i>
                         </li>
-                        <li class="border-b border-white border-opacity-10 py-8"><a href="./boutique">Boutique</a></li>
+                        <li class="border-b border-white border-opacity-10 py-8"><a href="<?= site_url().'/boutique' ?>">Boutique</a></li>
                         <li class="border-b border-white border-opacity-10 py-8">Actualités</li>
                         <li class="py-8">Formation continue</li>
                     </ul>

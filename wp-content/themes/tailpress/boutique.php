@@ -64,9 +64,28 @@ hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
             </svg>
             <span class="uppercase">Filtres</span>
         </div>
-        <button class="uppercase justify-self-center self-center max-w-[150px] h-10 rounded-full bg-transparent hover:bg-primary-dark border border-white text-white flex items-center min-w-max px-6">
-            Catégories<i class="fa-solid fa-caret-down ml-2"></i>
-        </button>
+        <div class="justify-self-center self-center relative">
+            <button class="category-toggle uppercase max-w-[150px] h-10 rounded-full bg-transparent hover:bg-primary-dark border border-white text-white flex items-center min-w-max px-6">
+                Catégories<i class="fa-solid fa-caret-down ml-2"></i>
+            </button>
+            <div class="category-dropdown hidden py-2 absolute z-10 max-w-screen-sm w-full mt-2 bg-white border border-primary rounded-lg text-primary flex flex-col gap-2">
+                <div class="hover:bg-primary hover:text-white px-2 py-1">
+                    <input type="checkbox" id="scales" name="scales"
+                           checked>
+                    <label for="scales">One</label>
+                </div>
+                <div class="hover:bg-primary hover:text-white px-2 py-1">
+                    <input type="checkbox" id="scales" name="scales"
+                           checked>
+                    <label for="scales">Two</label>
+                </div>
+                <div class="hover:bg-primary hover:text-white px-2 py-1">
+                    <input type="checkbox" id="scales" name="scales"
+                           checked>
+                    <label for="scales">Three</label>
+                </div>
+            </div>
+        </div>
         <form action="#" class="h-10 self-center" method="get">
             <label for="search" class="sr-only">Rechercher</label>
             <div class="w-full h-full bg-[#2E84AF] flex items-center relative rounded-full">
