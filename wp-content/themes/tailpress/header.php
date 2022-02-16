@@ -50,7 +50,7 @@
                         <?php } ?>
                     </div>
                     <div class="z-20 flex items-center">
-                        <?php if (is_page_template('boutique.php')): ?>
+                        <?php if (is_page_template('boutique.php') || (strpos(get_permalink(), '/boutique/') !== true) ): ?>
                             <div class="border-r border-primary border-opacity-20 md:border-none px-4 relative">
                                 <a href="" class="cart not-active_cart grid place-content-center h-pixel-46 w-pixel-46 md:h-pixel-39 md:w-pixel-39 rounded-full border"><span
                                             class="sr-only">Accéder à mon panier</span>
