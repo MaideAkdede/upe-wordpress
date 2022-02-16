@@ -18,7 +18,7 @@
 <div id="page" class="min-h-screen flex flex-col">
 
     <?php do_action('tailpress_header'); ?>
-    <div class="mx-auto container relative">
+    <div class="relative">
         <div class="hidden md:block -z-20">
             <div class="-z-20 h-72 w-72 rounded-full absolute -top-32 -right-24
             bg-primary bg-opacity-10"></div>
@@ -30,8 +30,7 @@
     </div>
 
     <header>
-        <div class="mx-auto container">
-            <div class="py-6">
+        <div class="mx-auto py-6 px-8">
                 <div class="flex justify-between items-center">
                     <div class="w-[60px] h-[60px] md:h-[65px] md:w-[65px] lg:h-[75px] lg:w-[75px] xl:h-[100px] xl:w-[100px]">
                         <?php if (has_custom_logo()) { ?>
@@ -141,9 +140,9 @@
                         <li class="border-b border-white border-opacity-10 py-8">Actualités</li>
                         <li class="py-8">Formation continue</li>
                     </ul>
-                    <div class="flex justify-between max-w-sm items-center ml-auto mr-16 text-right text-base">
+                    <div class="flex justify-end items-center ml-auto mr-16 text-right text-base">
                         <a href=""
-                           class="ml-8 text-white text-bold font-dm-bold text-opacity-60 uppercase text-xs tracking-widest">Contactez-nous</a>
+                           class="text-white text-bold font-dm-bold text-opacity-60 uppercase text-xs tracking-widest mr-12">Contactez-nous</a>
                         <div>
                             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="" class="pl-2"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -166,7 +165,6 @@
                                     )
                                 );
                                 */ ?>
-            </div>
         </div>
     </header>
 
