@@ -4,7 +4,7 @@
 
 <?php do_action('tailpress_content_after'); ?>
 <div class="py-6">
-    <div class="flex overflow-x-auto my-6 scrollbar-hide">
+    <div class="flex xl:justify-center overflow-x-auto my-6 scrollbar-hide ">
         <?php for ($x = 1; $x <= 6; $x++): ?>
             <figure class="h-[100px] min-w-full sm:min-w-[50%] md:min-w-[33%] lg:min-w-[25%] xl:min-w-[250px] xl:gap-7 relative">
                 <img class="backdrop-grayscale h-full w-full object-contain" src="<?php echo get_template_directory_uri() . '/resources/images/home-slider/'.$x.'.png' ?>"
@@ -25,7 +25,7 @@
         role="contentinfo">
     <h1 class="sr-only">Pied de page</h1>
     <?php do_action('tailpress_footer'); ?>
-    <div class="md:container md:mx-auto md:grid md:grid-cols-footer-md lg:grid-cols-footer-lg md:gap-7 justify-between mt-24">
+    <div class="md:container md:mx-auto md:grid md:grid-cols-footer-md lg:grid-cols-footer-lg md:gap-7 justify-between mt-24 p-8 md:p-0">
         <div class="-mt-pixel-25 mx-auto text-white text-left text-opacity-60 not-italic max-w-sm md:border-none border-b-2 p-0 pb-8 border-white border-opacity-10">
             <div class="mb-8 flex items-center justify-center md:justify-start sm:gap-4">
                 <img class="" src="<?php echo get_template_directory_uri() . '/resources/images/logo.svg' ?>"
@@ -34,32 +34,21 @@
             </div>
             <address class="not-italic">
                 <div class="flex items-start mb-6">
-                    <div class="w-4 mr-2.5 inline-block">
-                        <i class="fas fa-directions text-secondary pt-[7px]"></i>
-                    </div>
+                    <i class="fas fa-directions text-secondary pt-[7px] inline-block mr-3"></i>
                     <p>Avenue J. Burgers 2 Bte 25,<br>
                         1180 Uccle (Belgique)</p>
                 </div>
                 <a href="mailto:jim@rock.com" class="block mb-6 hover:text-white"
                    title="Envoyer un mail à l'adresse suivante">
-                    <div class="w-4 mr-2.5 inline-block">
-                        <i class="fas fa-envelope text-secondary"></i>
-                    </div>
-                    contact@ergo-upe.be
+                    <i class="fas fa-envelope text-secondary inline-block mr-3"></i>contact@ergo-upe.be
                 </a>
                 <a href="tel:0032222222222" class="block mb-6 hover:text-white"
                    title="Téléphoner au numéro de téléphone suivant">
-                    <div class="w-4 mr-2.5 inline-block">
-                        <i class="fa-solid fa-phone-flip text-secondary"></i>
-                    </div>
-                    02/222.22.22
+                    <i class="fa-solid fa-phone-flip text-secondary inline-block mr-3"></i>02/222.22.22
                 </a>
             </address>
             <div class="flex">
-                <div class="w-4 mr-2.5 inline-block">
-                    <i class="fas fa-directions text-secondary"></i>
-                </div>
-                <p> BE75 2100 2615 1151</p>
+                <i class="fas fa-directions text-secondary inline-block mr-3"></i><p>BE75 2100 2615 1151</p>
             </div>
         </div>
         <div class="hidden lg:block container py-1 md:py-0 mx-auto text-pixel-14 text-left not-italic max-w-sm">
@@ -81,7 +70,7 @@
             <a href="./boutique" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                         title="Accéder à la page XXX" class="mr-2">—</span>Formation continue</a>
         </div>
-        <div class="py-12 md:py-0 mx-auto text-white text-opacity-60 text-left not-italic max-w-sm leading-8 md:border-none border-b-2  border-white border-opacity-10">
+        <div class="py-12 md:py-0 mx-auto text-white text-opacity-60 text-left not-italic max-w-sm md:max-w-[315px] leading-8 md:border-none border-b-2  border-white border-opacity-10">
             <h2 class="text-white text-opacity-100 font-bold font-dm-bold mb-6 uppercase">Newsletter</h2>
             <p class="">Inscrivez-vous à notre newsletter et restez aux courants de nos dernières actualités</p>
             <form action="" method="POST">
@@ -91,7 +80,7 @@
                 placeholder-white placeholder-opacity-60 w-full
                 focus:outline-none focus:ring-2 focus:ring-white"
                            type="email" id="newsletter-email" placeholder="Votre adresse e-mail">
-                    <button type="submit" class="absolute right-0 top-0 bottom-0 bg-[#5DA0C1] p-2 text-white"><i
+                    <button type="submit" class="absolute right-0 top-0 bottom-0 bg-[#5DA0C1] py-2 pr-4 pl-2 text-white"><i
                                 class="far fa-envelope"></i><span class="sr-only">m‘inscrire à la newsletter</span>
                     </button>
                 </div>
@@ -128,7 +117,7 @@
     </div>
     <div class="md:bg-primary-dark md:p-6 md:mt-12">
         <div class="md:mx-auto md:container md:flex md:justify-between md:items-center">
-            <div class="container p-0 pt-10 pb-12 max-w-sm md:max-w-none md:p-0 mx-auto text-left not-italic md:border-none md:flex md:flex md:flex-wrap">
+            <div class="container pt-10 pb-12 max-w-sm md:max-w-none md:p-0 mx-auto text-left not-italic md:border-none md:flex md:flex md:flex-wrap">
                 <a href="#" title="Voir et lire les mentions légales"
                    class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                             class="mr-2 md:hidden">—</span>Mentions légales</a>
