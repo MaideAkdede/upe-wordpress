@@ -108,7 +108,7 @@ hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
                             class="text-secondary font-bold font-dm-bold">22,50€</span></p>
                 <a class="absolute top-0 left-0 right-0
                 block z-[5] h-full w-full border-2 border-opacity-0 border-primary hover:border-opacity-100 transition-all rounded-md"
-                   href="" title="Voir l'article XXX"><span class="sr-only">Voir l'article XXX</span></a>
+                   href="<?= site_url().'/boutique/new-boutique-product/' ?>" title="Voir l'article XXX echo title"><span class="sr-only">Voir l'article XXX</span></a>
             </div>
         <?php endfor; ?>
     </div>
