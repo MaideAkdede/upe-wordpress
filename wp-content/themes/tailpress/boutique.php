@@ -1,6 +1,6 @@
 <?php /* Template Name: Page Boutique */ ?>
 <?php get_header(); ?>
-    <div class=" text-center py-8 text-neutral-600 md:pt-0 lg:-mt-12">
+    <div class=" text-center py-8 text-neutral-600 md:pt-0 md:-mt-12 lg:-mt-24">
         <div class="max-w-max mx-auto relative">
             <h1 class="text-pixel-35 lg:text-pixel-50 font-bold"><?php the_title(); ?></h1>
             <div class="hidden md:block h-12 w-14 absolute bottom-3 -left-11">

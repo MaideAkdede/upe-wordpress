@@ -3,7 +3,7 @@
 </div>
 
 <?php do_action('tailpress_content_after'); ?>
-<div class="py-6 bg-white">
+<div class="py-6 bg-white mt-24">
     <div class="flex xl:justify-center overflow-x-auto my-6 scrollbar-hide ">
         <?php for ($x = 1; $x <= 6; $x++): ?>
             <figure class="h-[100px] min-w-full sm:min-w-[50%] md:min-w-[33%] lg:min-w-[25%] xl:min-w-[250px] xl:gap-7 relative">
@@ -90,8 +90,7 @@
             <div>
                 <h2 class="text-white text-opacity-100 font-bold font-dm-bold  mb-6 uppercase">Devenir membre upe</h2>
                 <a href="#" title="M‘inscrire en tant que membre"
-                   class="block bg-secondary rounded-full w-12 min-w-[160px] max-w-max font-bold font-dm-bold py-3 px-6 text-pixel-13 text-center uppercase tracking-widest
-                  hover:bg-[#55992B] active:bg-[#478024]"
+                   class="btn-primary"
                 >Je m'inscris <span class="sr-only">pour devenir un membre</span></a>
             </div>
             <div class="sr-only md:not-sr-only md:pt-14">

@@ -13,6 +13,10 @@
     body {
         @apply font-dm-regular overflow-x-hidden;
     }
+    .btn-primary{
+        @apply block box-border border border-secondary bg-secondary rounded-full max-w-max font-bold font-dm-bold py-3 px-6 text-white text-pixel-13 text-center uppercase tracking-widest
+        hover:bg-[#55992B] active:bg-[#478024] hover:text-secondary hover:bg-transparent;
+    }
     .custom-logo-link {
         @apply block h-full w-full;
     }

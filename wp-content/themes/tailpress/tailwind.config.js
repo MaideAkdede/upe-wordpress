@@ -35,6 +35,7 @@ module.exports = {
                 'bullet-gray': '#EAEAEA',
             },
             gridTemplateColumns: {
+                'product': 'auto 1fr',
                 'footer-md': 'repeat(3, minmax(0, max-content))',
                 'footer-lg': 'repeat(4, minmax(0, max-content))',
             },
@@ -50,9 +51,20 @@ module.exports = {
                 'pixel-46': '46px',
                 'pixel-250': '250px'
             },
+            minHeight: {
+                'pixel-250': '250px',
+            },
+            maxWidth: {
+                'char-24': '24ch',
+                'lg-product-img': '398px',
+                'md-product-img': '250px',
+                'sm-product-img': '200px',
+            },
             fontSize: {
                 'pixel-13' : '0.8125rem',
                 'pixel-14' : '0.875rem',
+                'pixel-22' : '1.375rem',
+                'pixel-30' : '1.875rem',
                 'pixel-35' : '2.1875rem',
                 'pixel-50' : '3.125rem',
             },
@@ -70,6 +82,7 @@ module.exports = {
     plugins: [
         tailpress.tailwind,
         require('@tailwindcss/line-clamp'),
-        require('tailwind-scrollbar-hide')
+        require('tailwind-scrollbar-hide'),
+        require('@tailwindcss/typography'),
     ]
 };
