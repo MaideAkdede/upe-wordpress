@@ -131,12 +131,12 @@ function tailpress_custom_post_type()
             'slug' => 'agenda'
         ]
     ]);
-    register_post_type('boutique', [
+    register_post_type('product', [
         'label' => 'Boutique',
         'labels' => [
             'singular_name' => 'boutique',
             'add_new' => 'Ajouter',
-            'add_new_item' => 'Nouvel ajout',
+            'add_new_item' => 'Ajouter un nouveau produit dans la boutique',
         ],
         'description' => 'Liste de tous nos articles en vente',
         'public' => true,
