@@ -1,7 +1,8 @@
 const _ = require("lodash");
 const theme = require('./theme.json');
 const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
-
+const webpack = require('webpack');
+//
 module.exports = {
     mode: 'jit',
     content: [
@@ -80,6 +81,11 @@ module.exports = {
         }
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        }),
         tailpress.tailwind,
         require('@tailwindcss/line-clamp'),
         require('tailwind-scrollbar-hide'),

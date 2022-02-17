@@ -4,7 +4,7 @@
 
 <?php do_action('tailpress_content_after'); ?>
 <div class="py-6 bg-white mt-24">
-    <div class="flex xl:justify-center overflow-x-auto my-6 scrollbar-hide ">
+    <div class="owl-carousel owl-theme flex xl:justify-center overflow-x-auto my-6 scrollbar-hide">
         <?php for ($x = 1; $x <= 6; $x++): ?>
             <figure class="h-[100px] min-w-full sm:min-w-[50%] md:min-w-[33%] lg:min-w-[25%] xl:min-w-[250px] xl:gap-7 relative">
                 <img class="backdrop-grayscale h-full w-full object-contain" src="<?php echo get_template_directory_uri() . '/resources/images/home-slider/'.$x.'.png' ?>"
@@ -163,8 +163,6 @@
     </div>
 </footer>
 </div>
-
 <?php wp_footer(); ?>
-
 </body>
 </html>
