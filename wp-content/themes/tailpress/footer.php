@@ -3,6 +3,11 @@
 </div>
 
 <?php do_action('tailpress_content_after'); ?>
+<!--<div class="owl-carousel owl-theme">
+    <?php /*for ($x = 1; $x <= 6; $x++): */?>
+        <div class="h-20 w-20 bg-yellow-100">CONTENT</div>
+    <?php /*endfor; */?>
+</div>-->
 <div class="py-6 bg-white mt-24">
     <div class="owl-carousel owl-theme flex xl:justify-center overflow-x-auto my-6 scrollbar-hide">
         <?php for ($x = 1; $x <= 6; $x++): ?>
@@ -14,11 +19,11 @@
             </figure>
         <?php endfor; ?>
     </div>
-    <div class="text-center py-6">
+<!--    <div class="text-center py-6">
         <button class="inline-block h-2.5 w-2.5 rounded-full bg-bullet-gray m-1"><span class="sr-only">Slider précedent</span></button>
         <button class="inline-block h-2.5 w-2.5 rounded-full bg-primary m-1"><span class="sr-only">Slider actuel</span></button>
         <button class="inline-block h-2.5 w-2.5 rounded-full bg-bullet-gray m-1"><span class="sr-only">Slider suivant</span></button>
-    </div>
+    </div>-->
 </div>
 <footer id="colophon"
         class="site-footer relative h-auto w-screen bg-primary lg:bg-footer-bg lg:bg-cover lg:bg-center lg:bg-no-repeat"

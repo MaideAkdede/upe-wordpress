@@ -27,7 +27,7 @@
         </div>
     </div>
 
-    <header>
+    <header class="max-w-screen">
         <div class="mx-auto py-6 px-8">
             <div class="flex justify-between items-center">
                 <div class="w-[60px] h-[60px] md:h-[65px] md:w-[65px] lg:h-[75px] lg:w-[75px] xl:h-[100px] xl:w-[100px]">
@@ -49,7 +49,7 @@
                     <?php } ?>
                 </div>
                 <div class="z-20 flex items-center mr-2.5">
-                    <?php if (is_page_template('boutique.php') || (strpos(get_permalink(), '/boutique/') !== true)): ?>
+                    <?php if (is_page_template('boutique.php') || (strpos(get_permalink(), 'boutique') !== false)): ?>
                         <div class="border-r border-primary border-opacity-20 md:border-none px-4 relative">
                             <a href=""
                                class="cart not-active_cart grid place-content-center h-pixel-46 w-pixel-46 md:h-pixel-39 md:w-pixel-39 rounded-full border"><span
@@ -170,10 +170,10 @@
     </header>
 
     <div class="hidden menu-bg">
-        <div class="z-[5] absolute rounded-full bg-primary h-[300vh] w-[300vh] -top-1/3 left-[15%] xl:left-1/3 xl:left-1/2 "></div>
-        <div class="z-[4] absolute rounded-full bg-primary bg-opacity-10 h-[300vh] w-[300vh] -top-[45vh] -left-[30vh]"></div>
-        <div class="z-[3] absolute rounded-full bg-primary bg-opacity-10 h-[300vh] w-[300vh] -top-[35vh] -left-[15vh]"></div>
-        <div class="z-[2] absolute bg-white bg-opacity-90 h-screen w-screen top-0 left-0"></div>
+        <div class="z-[5] fixed rounded-full bg-primary h-[300vh] w-[300vh] -top-1/2 left-[15%] xl:left-1/3"></div>
+        <div class="z-[4] fixed rounded-full bg-primary bg-opacity-10 h-[300vh] w-[300vh] -top-[55vh] -left-[30vh]"></div>
+        <div class="z-[3] fixed rounded-full bg-primary bg-opacity-10 h-[300vh] w-[300vh] -top-[55vh] -left-[15vh]"></div>
+        <div class="z-[2] fixed bg-white bg-opacity-90 h-screen w-screen top-0 left-0"></div>
     </div>
 
     <div id="content" class="site-content flex-grow">

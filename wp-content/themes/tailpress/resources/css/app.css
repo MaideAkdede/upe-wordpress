@@ -7,8 +7,8 @@
 @import "../../node_modules/@fortawesome/fontawesome-pro/css/fontawesome.css";
 @import "../../node_modules/@fortawesome/fontawesome-pro/css/all.css";
 
-@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
-@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
+@import 'owl.carousel/dist/assets/owl.carousel.min.css';
+@import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 
 @import "custom.css";
 
@@ -16,32 +16,44 @@
     body {
         @apply font-dm-regular overflow-x-hidden;
     }
-    .btn-primary{
+
+    .btn-primary {
         @apply block box-border border border-secondary bg-secondary rounded-full max-w-max font-bold font-dm-bold py-3 px-6 text-white text-pixel-13 text-center uppercase tracking-widest
         hover:bg-[#55992B] active:bg-[#478024] hover:text-secondary hover:bg-transparent;
     }
+
     .custom-logo-link {
         @apply block h-full w-full;
     }
+
     .custom-logo {
         @apply h-full w-full;
     }
-    .not-active_menu-elements{
+
+    .not-active_menu-elements {
         @apply border-primary;
     }
-    .active_menu-elements{
+
+    .active_menu-elements {
         @apply border-white;
     }
-    .not-active_menu-button{
+
+    .not-active_menu-button {
         @apply text-primary border border-primary hover:bg-secondary hover:bg-opacity-20 active:bg-opacity-40;
     }
-    .active_menu-button{
+
+    .active_menu-button {
         @apply text-white border-secondary bg-secondary hover:contrast-125 active:contrast-150 ;
     }
-    .active-cart{
+
+    .active-cart {
         @apply bg-[#e9eff4] border-secondary;
     }
-    .not-active_cart{
+
+    .not-active_cart {
         @apply bg-transparent border-primary;
+    }
+    .owl-carousel .owl-dots .active span {
+        @apply bg-primary !important;
     }
 }

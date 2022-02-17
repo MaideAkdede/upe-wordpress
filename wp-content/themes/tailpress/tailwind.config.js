@@ -1,7 +1,6 @@
 const _ = require("lodash");
 const theme = require('./theme.json');
 const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
-const webpack = require('webpack');
 //
 module.exports = {
     mode: 'jit',
@@ -56,6 +55,7 @@ module.exports = {
                 'pixel-250': '250px',
             },
             maxWidth: {
+                'screen': '100vw',
                 'char-24': '24ch',
                 'lg-product-img': '398px',
                 'md-product-img': '250px',
@@ -81,11 +81,6 @@ module.exports = {
         }
     },
     plugins: [
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "window.jQuery": "jquery"
-        }),
         tailpress.tailwind,
         require('@tailwindcss/line-clamp'),
         require('tailwind-scrollbar-hide'),
