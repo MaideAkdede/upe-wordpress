@@ -14,98 +14,13 @@
                     class="ml-1 mr-1">></span><a href="#">Boutique</a></div>
     </div>
 
-    <button class="bg-primary inline-block h-[73px] w-[64px] rounded-r-md grid gap-1 place-content-center fixed top-[10%] my-8 z-[3] left-0
-hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
-        <svg
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.417"
-                height="37.109" viewBox="0 0 30.417 37.109">
-            <defs>
-                <clipPath id="clip-path-filter">
-                    <rect width="30.417" height="37.109" fill="#fff"/>
-                </clipPath>
-            </defs>
-            <g clip-path="url(#clip-path-filter)">
-                <path
-                      d="M3.668,24.475V.71a.71.71,0,1,0-1.42,0V24.475a2.954,2.954,0,0,0,0,5.736V36.4a.71.71,0,0,0,1.42,0V30.211a2.954,2.954,0,0,0,0-5.736"
-                      fill="#fff"/>
-                <path
-                      d="M38.168,11.6V.71a.71.71,0,1,0-1.42,0V11.6a2.954,2.954,0,0,0,0,5.736V36.4a.71.71,0,0,0,1.42,0V17.338a2.954,2.954,0,0,0,0-5.736"
-                      transform="translate(-22.249)" fill="#fff"/>
-                <path
-                      d="M72.668,3.347V.71a.71.71,0,1,0-1.42,0V3.347a2.954,2.954,0,0,0,0,5.736V36.4a.71.71,0,0,0,1.42,0V9.082a2.954,2.954,0,0,0,0-5.736"
-                      transform="translate(-44.498)" fill="#fff"/>
-            </g>
-        </svg>
-        <span class="uppercase text-white text-opacity-60 text-xs leading-3">Filtrer</span>
-    </button>
-
-    <div class="bg-primary mx-auto my-8 max-w-[685px] h-20
-    grid grid-cols-[144px_2fr_3fr] gap-4 rounded-md pr-6 hidden md:grid
-    text-white font-dm-bold text-bold text-xs">
-        <div class="md:bg-primary-dark flex gap-3 place-content-center items-center h-full rounded-md">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17"
-                 height="20" viewBox="0 0 30.417 37.109">
-                <defs>
-                    <clipPath id="clip-path">
-                        <rect id="Rectangle_77" data-name="Rectangle 77" width="30.417" height="37.109" fill="#fff"/>
-                    </clipPath>
-                </defs>
-                <g id="Groupe_94" data-name="Groupe 94" clip-path="url(#clip-path)">
-                    <path id="Tracé_43" data-name="Tracé 43"
-                          d="M3.668,24.475V.71a.71.71,0,1,0-1.42,0V24.475a2.954,2.954,0,0,0,0,5.736V36.4a.71.71,0,0,0,1.42,0V30.211a2.954,2.954,0,0,0,0-5.736"
-                          fill="#fff"/>
-                    <path id="Tracé_44" data-name="Tracé 44"
-                          d="M38.168,11.6V.71a.71.71,0,1,0-1.42,0V11.6a2.954,2.954,0,0,0,0,5.736V36.4a.71.71,0,0,0,1.42,0V17.338a2.954,2.954,0,0,0,0-5.736"
-                          transform="translate(-22.249)" fill="#fff"/>
-                    <path id="Tracé_45" data-name="Tracé 45"
-                          d="M72.668,3.347V.71a.71.71,0,1,0-1.42,0V3.347a2.954,2.954,0,0,0,0,5.736V36.4a.71.71,0,0,0,1.42,0V9.082a2.954,2.954,0,0,0,0-5.736"
-                          transform="translate(-44.498)" fill="#fff"/>
-                </g>
-            </svg>
-            <span class="uppercase">Filtres</span>
-        </div>
-        <div class="justify-self-center self-center relative">
-            <button class="category-toggle uppercase max-w-[150px] h-10 rounded-full bg-transparent hover:bg-primary-dark border border-white text-white flex items-center min-w-max px-6">
-                Catégories<i class="fa-solid fa-caret-down ml-2"></i>
-            </button>
-            <div class="category-dropdown hidden py-2 absolute z-10 max-w-screen-sm w-full mt-2 bg-white border border-primary rounded-lg text-primary flex flex-col gap-2">
-                <div class="hover:bg-primary hover:text-white px-2 py-1">
-                    <input type="checkbox" id="scales" name="scales"
-                           checked>
-                    <label for="scales">One</label>
-                </div>
-                <div class="hover:bg-primary hover:text-white px-2 py-1">
-                    <input type="checkbox" id="scales" name="scales"
-                           checked>
-                    <label for="scales">Two</label>
-                </div>
-                <div class="hover:bg-primary hover:text-white px-2 py-1">
-                    <input type="checkbox" id="scales" name="scales"
-                           checked>
-                    <label for="scales">Three</label>
-                </div>
-            </div>
-        </div>
-        <form action="#" class="h-10 self-center" method="get">
-            <label for="search" class="sr-only">Rechercher</label>
-            <div class="w-full h-full bg-[#2E84AF] flex items-center relative rounded-full">
-                <input class="pl-4 h-full pr-8 text-white bg-transparent
-                placeholder-white w-full
-                focus:outline-none focus:ring-2 focus:ring-white focus:rounded-full"
-                       name="search" type="text" id="search" placeholder="RECHERCHER UN ÉVÈNEMENT">
-                <button type="submit" class="absolute right-0 top-0 bottom-0 p-2 text-white">
-                    <i class="fa-solid fa-magnifying-glass text-white text-opacity-60 mr-2.5"></i>
-                    <span class="sr-only">lancer ma recherche de filtrage</span>
-                </button>
-            </div>
-        </form>
-    </div>
+    <?php get_template_part('template-parts/filters');?>
 
     <div class="mx-auto grid grid-cols-1 gap-x-6 gap-y-8 sm:gap-6 justify-items-center px-6 pb-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-[1280px]">
         <?php for ($x = 1; $x <= 6; $x++): ?>
-            <div class="bg-white mx-auto drop-shadow-xl mx-auto sm:mx-0 min-h-max max-w-[560px] text-center py-4 relative rounded-md">
+            <div class="bg-white drop-shadow-xl text-center py-4 relative rounded-md">
                 <div class="border-b-gray-200 border-b-2 pb-8">
-                    <div class="absolute top-0 left-0 m-4 z-[2] h-[4.375rem] w-[4.375rem] bg-secondary rounded-full flex items-center justify-center">
+                    <div class="absolute top-0 left-0 m-4 z-[2] h-price-sticker w-price-sticker bg-secondary rounded-full flex items-center justify-center">
                         <p class="font-bold font-dm-bold text-white"><?= $x ?>2,50€</p>
                     </div>
                     <div class="mx-auto mt-4 drop-shadow-xl w-[200px] h-[250px]">
@@ -114,7 +29,7 @@ hover:bg-[#246596] active:bg-[#215C8A] md:hidden">
                              alt="image numéro <?= $x ?>"/>
                     </div>
                 </div>
-                <p class="text-pixel-13 font-bold font-dm-bold text-gray-400 mt-8">Enseignement</p>
+                <p class="text-category font-bold font-dm-bold text-gray-400 mt-8">Enseignement</p>
                 <h2 class="text-xl text-neutral-600 font-bold font-dm-bold line-clamp-2 mt-2 mb-6 mx-4">Lorem ipsum
                     dolor sit amet,
                     consectetur adipisicing elit. Consequuntur illo magnam possimus, quod repellat velit. Aliquid

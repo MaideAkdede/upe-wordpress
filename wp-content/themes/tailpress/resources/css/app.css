@@ -18,8 +18,8 @@
     }
 
     .btn-primary {
-        @apply block box-border border border-secondary bg-secondary rounded-full max-w-max font-bold font-dm-bold py-3 px-6 text-white text-pixel-13 text-center uppercase tracking-widest
-        hover:bg-[#55992B] active:bg-[#478024] hover:text-secondary hover:bg-transparent;
+        @apply block border border-secondary bg-secondary rounded-full max-w-max font-bold font-dm-bold py-3 px-6 text-white text-button text-center uppercase tracking-widest
+       hover:text-secondary hover:bg-transparent;
     }
 
     .custom-logo-link {
@@ -39,11 +39,11 @@
     }
 
     .not-active_menu-button {
-        @apply text-primary border border-primary hover:bg-secondary hover:bg-opacity-20 active:bg-opacity-40;
+        @apply text-primary border border-primary hover:bg-primary hover:text-white active:bg-primary-active;
     }
 
     .active_menu-button {
-        @apply text-white border-secondary bg-secondary hover:contrast-125 active:contrast-150 ;
+        @apply text-white border-secondary bg-secondary hover:bg-secondary-hover active:bg-secondary-active ;
     }
 
     .active-cart {

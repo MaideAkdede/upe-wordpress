@@ -9,7 +9,8 @@
 </head>
 
 <body <?php body_class('bg-white text-gray-900 antialiased'); ?>>
-<div class="hidden md:block -z-30 w-screen h-[40vh] xl:h-[50vh] absolute top-0 opacity-10 bg-desktop-bg bg-no-repeat bg-cover bg-bottom object-fill"></div>
+
+<div class="hidden md:block -z-30 w-screen h-40vh xl:h-50vh absolute top-0 opacity-10 bg-desktop-bg bg-no-repeat bg-cover bg-bottom object-fill"></div>
 
 <?php do_action('tailpress_site_before'); ?>
 
@@ -18,9 +19,9 @@
     <?php do_action('tailpress_header'); ?>
     <div class="relative">
         <div class="hidden md:block -z-20">
-            <div class="-z-20 h-72 w-72 rounded-full absolute -top-32 -right-24
+            <div class="-z-20 h-72 rounded-full absolute -top-32 -right-24
             bg-primary bg-opacity-10"></div>
-            <div class="-z-20 aspect-square h-[750px] rounded-full absolute -top-32 -left-72
+            <div class="-z-20 aspect-square h-circle rounded-full absolute -top-32 -left-72
             border border-primary border-opacity-10"></div>
             <div class="-z-20 aspect-square h-72 rounded-full absolute top-64 -left-64
             border border-primary border-opacity-10"></div>
@@ -30,7 +31,7 @@
     <header class="max-w-screen">
         <div class="mx-auto py-6 px-8">
             <div class="flex justify-between items-center">
-                <div class="w-[60px] h-[60px] md:h-[65px] md:w-[65px] lg:h-[75px] lg:w-[75px] xl:h-[100px] xl:w-[100px]">
+                <div class="aspect-square w-logo-xs md:w-logo-md lg:w-logo-lg xl:w-logo-xl z-2">
                     <?php if (has_custom_logo()) { ?>
                         <a href="">
                             <?php the_custom_logo(); ?>
@@ -54,7 +55,7 @@
                             <a href=""
                                class="cart not-active_cart grid place-content-center h-pixel-46 w-pixel-46 md:h-pixel-39 md:w-pixel-39 rounded-full border"><span
                                         class="sr-only">Accéder à mon panier</span>
-                                <svg class="w-[25px] h-[23px] md:w-[19px] md:h-[17px]"
+                                <svg class="w-cart-base h-cart-base md:w-cart-md md:h-cart-md"
                                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      width="100%" height="100%" viewBox="0 0 25.404 23.098">
                                     <defs>
@@ -121,7 +122,7 @@
                         <div class="toggle-burger hidden h-6 w-12 flex flex-col justify-center">
                             <span class="sr-only">Fermer le menu de navigation</span>
                             <span class="block w-10 h-0.5 bg-white origin-center transform rotate-45 translate-y-px"></span>
-                            <span class="block w-10 h-0.5 bg-white origin-center transform -rotate-45 -translate-y-[1px]"></span>
+                            <span class="block w-10 h-0.5 bg-white origin-center transform -rotate-45 -translate-y-px"></span>
                         </div>
                     </a>
                 </div>
@@ -150,30 +151,15 @@
                         <a href="" class="pl-2"><i class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
-
             </div>
-            <?php
-            /*                wp_nav_menu(
-                                array(
-                                    'container_id' => 'primary-menu',
-                                    'container_class' => 'bg-primary absolute top-0 left-0 w-screen h-screen z-10',
-                                    'menu_class' => 'text-white text-bold font-dm-bold',
-                                    'theme_location' => 'primary',
-                                    'li_class' => 'w-[370px] border-b border-white py-4',
-                                    'submenu_class' => '',
-                                    'menuitemhaschildren_class'=>'hidden',
-                                    'fallback_cb' => false,
-                                )
-                            );
-                            */ ?>
         </div>
     </header>
 
     <div class="hidden menu-bg">
-        <div class="z-[5] fixed rounded-full bg-primary h-[300vh] w-[300vh] -top-1/2 left-[15%] xl:left-1/3"></div>
-        <div class="z-[4] fixed rounded-full bg-primary bg-opacity-10 h-[300vh] w-[300vh] -top-[55vh] -left-[30vh]"></div>
-        <div class="z-[3] fixed rounded-full bg-primary bg-opacity-10 h-[300vh] w-[300vh] -top-[55vh] -left-[15vh]"></div>
-        <div class="z-[2] fixed bg-white bg-opacity-90 h-screen w-screen top-0 left-0"></div>
+        <div class="z-5 fixed rounded-full bg-primary h-huge-circle aspect-square -top-1/2 left-[15%] xl:left-1/3"></div>
+        <div class="z-4 fixed rounded-full bg-primary bg-opacity-10 h-huge-circle aspect-square -top-[55vh] -left-[30vh]"></div>
+        <div class="z-3 fixed rounded-full bg-primary bg-opacity-10 h-huge-circle aspect-square -top-[55vh] -left-[15vh]"></div>
+        <div class="z-2 fixed bg-white bg-opacity-90 h-screen w-screen top-0 left-0"></div>
     </div>
 
     <div id="content" class="site-content flex-grow">
@@ -190,5 +176,5 @@
         <?php do_action('tailpress_content_start'); ?>
 
 
-        <main class="bg-[#E9F2F7] md:bg-transparent">
+        <main class="bg-mobile md:bg-transparent">
 

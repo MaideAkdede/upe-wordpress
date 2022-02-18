@@ -2,9 +2,10 @@
 import jquery from "jquery";
 $ = jQuery = jquery;
 require("owl.carousel");
+
 $(function () {
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
+    this.owl = $('.owl-carousel');
+    this.owl.owlCarousel({
         loop:true,
         margin:10,
         nav:false,
@@ -23,13 +24,5 @@ $(function () {
                 items:5
             }
         }
-    });
-    owl.on('mousewheel', '.owl-stage', function (e) {
-        if (e.deltaY>0) {
-            owl.trigger('next.owl');
-        } else {
-            owl.trigger('prev.owl');
-        }
-        e.preventDefault();
     });
 });
