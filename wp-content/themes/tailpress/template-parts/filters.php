@@ -49,7 +49,7 @@ hover:bg-primary-hover active:bg-primary-active md:hidden">
         <span class="uppercase">Filtres</span>
     </div>
     <div class="justify-self-center self-center relative">
-        <button class="category-toggle uppercase max-w-[150px] h-10 rounded-full bg-transparent hover:bg-primary-dark border border-white text-white flex items-center min-w-max px-6">
+        <button class="category-toggle uppercase max-w-filter h-10 rounded-full bg-transparent hover:bg-primary-dark border border-white text-white flex items-center min-w-max px-6">
             Catégories<i class="fa-solid fa-caret-down ml-2"></i>
         </button>
         <div class="category-dropdown hidden py-2 absolute z-10 max-w-screen-sm w-full mt-2 bg-white border border-primary rounded-lg text-primary flex flex-col gap-2">
@@ -69,7 +69,7 @@ hover:bg-primary-hover active:bg-primary-active md:hidden">
     </div>
     <form action="#" class="h-10 self-center" method="get">
         <label for="search" class="sr-only">Rechercher</label>
-        <div class="w-full h-full bg-[#2E84AF] flex items-center relative rounded-full">
+        <div class="w-full h-full bg-filter-search flex items-center relative rounded-full">
             <input class="pl-4 h-full pr-8 text-white bg-transparent
                 placeholder-white w-full
                 focus:outline-none focus:ring-2 focus:ring-white focus:rounded-full"
