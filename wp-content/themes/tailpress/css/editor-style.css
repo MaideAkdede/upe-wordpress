@@ -1251,7 +1251,7 @@
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#E9F2F7\] {
+.bg-mobile {
   --tw-bg-opacity: 1;
   background-color: rgb(233 242 247 / var(--tw-bg-opacity));
 }
@@ -1273,11 +1273,6 @@
 .bg-\[\#e9eff4\] {
   --tw-bg-opacity: 1;
   background-color: rgb(233 239 244 / var(--tw-bg-opacity));
-}
-
-.bg-mobile {
-  --tw-bg-opacity: 1;
-  background-color: rgb(233 242 247 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-10 {
@@ -1525,6 +1520,10 @@
 
 .text-pixel-22 {
   font-size: 1.375rem;
+}
+
+.text-pixel-13 {
+  font-size: 0.8125rem;
 }
 
 .text-button {

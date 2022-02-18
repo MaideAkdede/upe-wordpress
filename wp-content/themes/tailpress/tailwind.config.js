@@ -94,6 +94,7 @@ module.exports = {
             fontSize: {
                 'category' : '0.8125rem',
                 'button' : '0.8125rem',
+                'pixel-13' : '0.8125rem',
                 'pixel-14' : '0.875rem',
                 'footer' : '0.875rem',
                 'pixel-22' : '1.375rem',
