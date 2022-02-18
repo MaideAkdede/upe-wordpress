@@ -3,27 +3,18 @@
 </div>
 
 <?php do_action('tailpress_content_after'); ?>
-<!--<div class="owl-carousel owl-theme">
-    <?php /*for ($x = 1; $x <= 6; $x++): */?>
-        <div class="h-20 w-20 bg-yellow-100">CONTENT</div>
-    <?php /*endfor; */?>
-</div>-->
 <div class="py-6 bg-white mt-24">
     <div class="owl-carousel owl-theme flex xl:justify-center overflow-x-auto my-6 scrollbar-hide">
         <?php for ($x = 1; $x <= 6; $x++): ?>
             <figure class="h-[100px] min-w-full sm:min-w-[50%] md:min-w-[33%] lg:min-w-[25%] xl:min-w-[250px] xl:gap-7 relative">
-                <img class="backdrop-grayscale h-full w-full object-contain" src="<?php echo get_template_directory_uri() . '/resources/images/home-slider/'.$x.'.png' ?>"
+                <img class="backdrop-grayscale h-full w-full object-contain"
+                     src="<?php echo get_template_directory_uri() . '/resources/images/home-slider/' . $x . '.png' ?>"
                      alt="Image of">
                 <div class="absolute backdrop-grayscale block bg-white/30 h-full w-full top-0"></div>
                 <figcaption class="sr-only">ghjk</figcaption>
             </figure>
         <?php endfor; ?>
     </div>
-<!--    <div class="text-center py-6">
-        <button class="inline-block h-2.5 w-2.5 rounded-full bg-bullet-gray m-1"><span class="sr-only">Slider précedent</span></button>
-        <button class="inline-block h-2.5 w-2.5 rounded-full bg-primary m-1"><span class="sr-only">Slider actuel</span></button>
-        <button class="inline-block h-2.5 w-2.5 rounded-full bg-bullet-gray m-1"><span class="sr-only">Slider suivant</span></button>
-    </div>-->
 </div>
 <footer id="colophon"
         class="site-footer relative h-auto w-screen bg-primary lg:bg-footer-bg lg:bg-cover lg:bg-center lg:bg-no-repeat"
@@ -53,7 +44,8 @@
                 </a>
             </address>
             <div class="flex">
-                <i class="fas fa-directions text-secondary inline-block mr-3"></i><p>BE75 2100 2615 1151</p>
+                <i class="fas fa-directions text-secondary inline-block mr-3"></i>
+                <p>BE75 2100 2615 1151</p>
             </div>
         </div>
         <div class="hidden lg:block container py-1 md:py-0 mx-auto text-pixel-14 text-left not-italic max-w-sm">
@@ -85,7 +77,8 @@
                 placeholder-white placeholder-opacity-60 w-full
                 focus:outline-none focus:ring-2 focus:ring-white"
                            type="email" id="newsletter-email" placeholder="Votre adresse e-mail">
-                    <button type="submit" class="absolute right-0 top-0 bottom-0 bg-[#5DA0C1] py-2 pr-4 pl-2 text-white"><i
+                    <button type="submit"
+                            class="absolute right-0 top-0 bottom-0 bg-[#5DA0C1] py-2 pr-4 pl-2 text-white"><i
                                 class="far fa-envelope"></i><span class="sr-only">m‘inscrire à la newsletter</span>
                     </button>
                 </div>
@@ -121,7 +114,7 @@
     </div>
     <div class="md:bg-primary-dark md:p-6 md:mt-12">
         <div class="md:mx-auto md:container md:flex md:justify-between md:items-center">
-            <div class="container pt-10 pb-12 max-w-sm md:max-w-none md:p-0 mx-auto text-left not-italic md:border-none md:flex md:flex md:flex-wrap">
+            <div class="pb-12 md:pb-0 max-w-sm md:max-w-none md:p-0 mx-auto md:mx-0 text-left not-italic md:border-none md:flex md:flex md:flex-wrap">
                 <a href="#" title="Voir et lire les mentions légales"
                    class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                             class="mr-2 md:hidden">—</span>Mentions légales</a>
