@@ -3,19 +3,9 @@
 </div>
 
 <?php do_action('tailpress_content_after'); ?>
-<div class="py-6 bg-white mt-24">
-    <div class="owl-carousel owl-theme flex xl:justify-center overflow-x-auto my-6 scrollbar-hide">
-        <?php for ($x = 1; $x <= 6; $x++): ?>
-            <figure class="h-[100px] min-w-full sm:min-w-[50%] md:min-w-[33%] lg:min-w-[25%] xl:min-w-[250px] xl:gap-7 relative">
-                <img class="backdrop-grayscale h-full w-full object-contain"
-                     src="<?php echo get_template_directory_uri() . '/resources/images/home-slider/' . $x . '.png' ?>"
-                     alt="Image of">
-                <div class="absolute backdrop-grayscale block bg-white/30 h-full w-full top-0"></div>
-                <figcaption class="sr-only">ghjk</figcaption>
-            </figure>
-        <?php endfor; ?>
-    </div>
-</div>
+
+<?php get_template_part('template-parts/slider'); ?>
+
 <footer id="colophon"
         class="site-footer relative h-auto w-screen bg-primary lg:bg-footer-bg lg:bg-cover lg:bg-center lg:bg-no-repeat"
         role="contentinfo">
@@ -23,14 +13,14 @@
     <?php do_action('tailpress_footer'); ?>
     <div class="md:container md:mx-auto md:grid md:grid-cols-footer-md lg:grid-cols-footer-lg md:gap-7 justify-between mt-24 p-8 md:p-0">
         <div class="-mt-pixel-25 mx-auto text-white text-left text-opacity-60 not-italic max-w-sm md:border-none border-b-2 p-0 pb-8 border-white border-opacity-10">
-            <div class="mb-8 flex items-center justify-center md:justify-start sm:gap-4">
+            <div class="mb-4 flex items-center justify-center md:justify-start sm:gap-4">
                 <img class="" src="<?php echo get_template_directory_uri() . '/resources/images/logo.svg' ?>"
                      alt="<?= get_bloginfo('name'); ?>" width="70" height="70">
                 <p class="sr-only uppercase text-white text-opacity-100 font-bold font-dm-bold sm:not-sr-only"><?= get_bloginfo('name'); ?></p>
             </div>
             <address class="not-italic">
                 <div class="flex items-start mb-6">
-                    <i class="fas fa-directions text-secondary pt-[7px] inline-block mr-3"></i>
+                    <i class="fas fa-directions text-secondary pt-7px inline-block mr-3"></i>
                     <p>Avenue J. Burgers 2 Bte 25,<br>
                         1180 Uccle (Belgique)</p>
                 </div>
@@ -48,37 +38,40 @@
                 <p>BE75 2100 2615 1151</p>
             </div>
         </div>
-        <div class="hidden lg:block container py-1 md:py-0 mx-auto text-pixel-14 text-left not-italic max-w-sm">
-            <h2 class="text-white text-opacity-100 font-bold font-dm-bold mb-6 uppercase">Menu</h2>
-            <a href="/" title="Accéder à la page XXX"
-               class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
-                        class="mr-2">—</span>Accueil</a>
-            <a href="#" title="Accéder à la page XXX"
-               class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
-                        class="mr-2">—</span>Qui
-                sommes-nous ?</a>
-            <a href="#" title="Accéder à la page XXX"
-               class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
-                        class="mr-2">—</span>L'ergothérapie</a>
-            <a href="./boutique" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
-                        title="Accéder à la page XXX" class="mr-2">—</span>Boutique</a>
-            <a href="./boutique" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
-                        title="Accéder à la page XXX" class="mr-2">—</span>Actualités</a>
-            <a href="./boutique" class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
-                        title="Accéder à la page XXX" class="mr-2">—</span>Formation continue</a>
+        <div class="hidden lg:block container py-1 md:py-0 mx-auto text-left not-italic max-w-sm">
+            <h2 class="text-white text-opacity-100 font-bold font-dm-bold mb-8 uppercase">Menu</h2>
+            <div class="flex flex-col gap-2.5">
+                <a href="/" title="Accéder à la page XXX"
+                   class="text-white text-opacity-60 hover:text-opacity-100 "><span
+                            class="mr-2">—</span>Accueil</a>
+                <a href="#" title="Accéder à la page XXX"
+                   class="text-white text-opacity-60 hover:text-opacity-100 "><span
+                            class="mr-2">—</span>Qui
+                    sommes-nous ?</a>
+                <a href="#" title="Accéder à la page XXX"
+                   class="text-white text-opacity-60 hover:text-opacity-100 "><span
+                            class="mr-2">—</span>L'ergothérapie</a>
+                <a href="./boutique" class="text-white text-opacity-60 hover:text-opacity-100 "><span
+                            title="Accéder à la page XXX" class="mr-2">—</span>Boutique</a>
+                <a href="./boutique" class="text-white text-opacity-60 hover:text-opacity-100 "><span
+                            title="Accéder à la page XXX" class="mr-2">—</span>Actualités</a>
+                <a href="./boutique" class="text-white text-opacity-60 hover:text-opacity-100 "><span
+                            title="Accéder à la page XXX" class="mr-2">—</span>Formation continue</a>
+            </div>
         </div>
-        <div class="py-12 md:py-0 mx-auto text-white text-opacity-60 text-left not-italic max-w-sm md:max-w-[315px] leading-8 md:border-none border-b-2  border-white border-opacity-10">
-            <h2 class="text-white text-opacity-100 font-bold font-dm-bold mb-6 uppercase">Newsletter</h2>
-            <p class="">Inscrivez-vous à notre newsletter et restez aux courants de nos dernières actualités</p>
+        <div class="py-12 md:py-0 mx-auto text-white text-opacity-60 text-left not-italic max-w-sm md:max-w-xs leading-8 border-b-2  border-white border-opacity-10 md:border-none leading-normal">
+            <h2 class="text-white text-opacity-100 font-bold font-dm-bold mb-8 uppercase">Newsletter</h2>
+            <p>Inscrivez-vous à notre newsletter et restez aux courants de nos dernières
+                actualités</p>
             <form action="" method="POST">
                 <label for="newsletter-email" class="sr-only">S'inscrire à la newsletter</label>
-                <div class="w-full h-12 mt-8 bg-[#5DA0C1] flex items-center relative">
+                <div class="w-full h-12 mt-8 bg-input flex items-center relative">
                     <input class="pl-4 h-full pr-8 text-white bg-transparent
                 placeholder-white placeholder-opacity-60 w-full
                 focus:outline-none focus:ring-2 focus:ring-white"
                            type="email" id="newsletter-email" placeholder="Votre adresse e-mail">
                     <button type="submit"
-                            class="absolute right-0 top-0 bottom-0 bg-[#5DA0C1] py-2 pr-4 pl-2 text-white"><i
+                            class="absolute right-0 top-0 bottom-0 bg-input py-2 pr-4 pl-2 text-white"><i
                                 class="far fa-envelope"></i><span class="sr-only">m‘inscrire à la newsletter</span>
                     </button>
                 </div>
@@ -86,14 +79,14 @@
         </div>
         <div class="py-12 md:py-0 mx-auto lg:ml-auto text-white text-left not-italic max-w-sm border-b-2 md:border-none border-white border-opacity-10">
             <div>
-                <h2 class="text-white text-opacity-100 font-bold font-dm-bold  mb-6 uppercase">Devenir membre upe</h2>
+                <h2 class="text-white text-opacity-100 font-bold font-dm-bold mb-8 uppercase">Devenir membre upe</h2>
                 <a href="#" title="M‘inscrire en tant que membre"
                    class="btn-primary"
                 >Je m'inscris <span class="sr-only">pour devenir un membre</span></a>
             </div>
             <div class="sr-only md:not-sr-only md:pt-14">
-                <h2 class="text-white text-opacity-100 font-bold font-dm-bold uppercase"><a href="/contact"
-                                                                                            title="Accéder à la page de contact">Contactez-nous</a>
+                <h2 class="text-white text-opacity-100 font-bold font-dm-bold uppercase">
+                    <a href="/contact" title="Accéder à la page de contact">Contactez-nous</a>
                 </h2>
                 <div class="text-white text-opacity-60 flex gap-5">
                     <a href="" title="Contactez-nous via Facebook"
@@ -113,8 +106,8 @@
         </div>
     </div>
     <div class="md:bg-primary-dark md:p-6 md:mt-12">
-        <div class="md:mx-auto md:container md:flex md:justify-between md:items-center">
-            <div class="pb-12 md:pb-0 max-w-sm md:max-w-none md:p-0 mx-auto md:mx-0 text-left not-italic md:border-none md:flex md:flex md:flex-wrap">
+        <div class="md:mx-auto md:container md:p-0 md:flex md:justify-between md:items-center">
+            <div class="text-base md:text-footer pl-8 sm:pl-0 pb-12 md:pb-0 max-w-sm md:max-w-none md:p-0 mx-auto md:mx-0 text-left not-italic md:border-none md:flex md:flex md:flex-wrap">
                 <a href="#" title="Voir et lire les mentions légales"
                    class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                             class="mr-2 md:hidden">—</span>Mentions légales</a>
@@ -125,7 +118,7 @@
                    class="block py-2 text-white text-opacity-60 hover:text-opacity-100 "><span
                             class="mr-2 md:mx-2">—</span>Conditions générales de vente</a>
             </div>
-            <div class="bg-primary-dark text-center text-pixel-14 text-white text-opacity-60 py-6 md:py-0">
+            <div class="bg-primary-dark text-center text-footer text-white text-opacity-60 py-6 md:py-0">
                 <p class="whitespace-nowrap">Site réalisé par
                     <span class="sr-only"> LWS</span>
                     <svg class="inline-block ml-2.5" xmlns="http://www.w3.org/2000/svg" width="51.725" height="16.176"
